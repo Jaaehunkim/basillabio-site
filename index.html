@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>바실라바이오 · Basilla Bio — 일상과 현장의 안전을 바꾸는 웨어러블 하드웨어</title>
+<meta name="description" content="바실라바이오(Basilla Bio)는 시각장애인용 AI 스마트 안전 캡 SafeHat과 시니어 헬스케어 스마트 인솔을 연구·개발하는 서울의 웨어러블 하드웨어 기업입니다." data-en="Basilla Bio is a Seoul-based wearable hardware company developing SafeHat, an AI smart safety cap for people who are blind or low-vision, and smart insole systems for senior healthcare.">
+<meta name="theme-color" content="#123B2D">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Basilla Bio">
+<meta property="og:title" content="바실라바이오 · Basilla Bio">
+<meta property="og:description" content="일상과 현장의 안전을 바꾸는 웨어러블 하드웨어 & AI 헬스케어">
+<meta property="og:url" content="https://www.basillabio.com/">
+<meta property="og:image" content="https://www.basillabio.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="ko_KR">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23123B2D'/%3E%3Cpath d='M32 46V26c0-6 5-10 12-10-1 9-5 14-12 15m0 0c0-7-5-11-12-11 1 8 5 12 12 12' fill='none' stroke='%23C9E3A6' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<style>
+/* ============================================================
+   Basilla Bio — one page  (self-contained, no external requests)
+   ============================================================ */
+:root{
+  --ink:#10161A;
+  --ink-2:#1B2429;
+  --body:#3A464C;
+  --muted:#6B777E;
+  --paper:#FBFAF7;
+  --paper-2:#F4F2EC;
+  --white:#FFFFFF;
+  --line:#E2DFD6;
+  --line-2:#EDEAE2;
+  --green:#1F5C46;
+  --green-deep:#123B2D;
+  --green-soft:#E7F0E4;
+  --lime:#C9E3A6;
+  --maxw:1160px;
+  --r-lg:22px;
+  --r-md:14px;
+  --shadow-sm:0 1px 2px rgba(16,22,26,.04),0 8px 24px -12px rgba(16,22,26,.14);
+  --shadow-md:0 2px 4px rgba(16,22,26,.05),0 24px 48px -24px rgba(16,22,26,.22);
+  --ease:cubic-bezier(.22,.61,.36,1);
+  --font-sans:"Helvetica Neue",Helvetica,Arial,"Apple SD Gothic Neo","Noto Sans KR","Noto Sans CJK KR","Malgun Gothic","Segoe UI",Roboto,system-ui,sans-serif;
+  --font-serif:Georgia,"Times New Roman","Nanum Myeongjo","Noto Serif KR","Noto Serif CJK KR",serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:var(--font-sans);font-size:17px;line-height:1.7;
+  letter-spacing:-.01em;-webkit-font-smoothing:antialiased;
+  word-break:keep-all;overflow-x:hidden;
+}
+h1,h2,h3,h4{margin:0;line-height:1.2;letter-spacing:-.03em;font-weight:700}
+section[id]{scroll-margin-top:84px}
+p{margin:0}
+a{color:inherit;text-decoration:none}
+ul{margin:0;padding:0;list-style:none}
+img,svg{display:block;max-width:100%}
+::selection{background:var(--lime);color:var(--green-deep)}
+:focus-visible{outline:2px solid var(--green);outline-offset:3px;border-radius:4px}
+
+.wrap{width:100%;max-width:var(--maxw);margin:0 auto;padding:0 32px}
+.skip{position:absolute;left:-9999px;top:0;background:var(--ink);color:#fff;padding:12px 18px;z-index:200}
+.skip:focus{left:16px;top:16px}
+
+/* ---------- header ---------- */
+.site-header{
+  position:sticky;top:0;z-index:100;
+  background:rgba(251,250,247,.82);
+  -webkit-backdrop-filter:saturate(180%) blur(14px);
+  backdrop-filter:saturate(180%) blur(14px);
+  border-bottom:1px solid transparent;
+  transition:border-color .3s var(--ease),background .3s var(--ease);
+}
+.site-header.is-scrolled{border-bottom-color:var(--line);background:rgba(251,250,247,.94)}
+.header-inner{display:flex;align-items:center;gap:28px;height:70px}
+.brand{display:flex;align-items:center;gap:11px;flex:0 0 auto}
+.brand-mark{width:32px;height:32px;flex:0 0 auto}
+.brand-name{font-size:16.5px;font-weight:700;letter-spacing:-.02em;line-height:1.1}
+.brand-sub{display:block;font-size:10.5px;font-weight:600;letter-spacing:.14em;color:var(--muted);text-transform:uppercase;margin-top:2px}
+.nav{margin-left:auto;margin-right:6px;display:flex;align-items:center;gap:2px}
+.nav a{
+  position:relative;font-size:14.5px;font-weight:500;color:var(--body);
+  padding:9px 13px;border-radius:8px;transition:color .2s,background .2s;white-space:nowrap;
+}
+.nav a:hover{color:var(--ink);background:rgba(16,22,26,.045)}
+.nav a.is-active{color:var(--green-deep)}
+.nav a.is-active::after{
+  content:"";position:absolute;left:13px;right:13px;bottom:3px;height:2px;
+  background:var(--green);border-radius:2px;
+}
+.header-tools{display:flex;align-items:center;gap:10px;flex:0 0 auto;margin-left:auto}
+.lang{
+  display:flex;align-items:center;background:rgba(16,22,26,.05);
+  border-radius:999px;padding:3px;font-size:12.5px;font-weight:600;
+}
+.lang button{
+  appearance:none;border:0;background:transparent;color:var(--muted);
+  font:inherit;font-weight:600;padding:5px 11px;border-radius:999px;cursor:pointer;
+  transition:background .2s,color .2s;letter-spacing:0;
+}
+.lang button[aria-pressed="true"]{background:var(--white);color:var(--green-deep);box-shadow:0 1px 3px rgba(16,22,26,.12)}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  font-size:14.5px;font-weight:600;letter-spacing:-.01em;
+  padding:11px 20px;border-radius:999px;border:1px solid transparent;
+  cursor:pointer;transition:transform .2s var(--ease),background .2s,color .2s,border-color .2s,box-shadow .2s;
+  white-space:nowrap;
+}
+.btn-primary{background:var(--green-deep);color:#fff;box-shadow:0 6px 18px -10px rgba(18,59,45,.9)}
+.btn-primary:hover{background:#0d2f24;transform:translateY(-1px)}
+.btn-ghost{border-color:rgba(16,22,26,.18);color:var(--ink);background:transparent}
+.btn-ghost:hover{background:rgba(16,22,26,.05);border-color:rgba(16,22,26,.28)}
+.btn-light{background:var(--white);color:var(--green-deep)}
+.btn-light:hover{transform:translateY(-1px);box-shadow:0 10px 26px -14px rgba(0,0,0,.6)}
+.btn-outline-light{border-color:rgba(255,255,255,.34);color:#fff}
+.btn-outline-light:hover{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.6)}
+.btn .arrow{transition:transform .25s var(--ease)}
+.btn:hover .arrow{transform:translateX(3px)}
+.header-cta{display:inline-flex}
+.menu-btn{
+  display:none;appearance:none;border:0;background:transparent;padding:8px;cursor:pointer;
+  border-radius:8px;color:var(--ink);
+}
+.menu-btn:hover{background:rgba(16,22,26,.06)}
+
+/* mobile drawer */
+.drawer{
+  display:none;position:fixed;inset:70px 0 auto 0;z-index:99;
+  background:var(--paper);border-bottom:1px solid var(--line);
+  padding:14px 24px 26px;box-shadow:var(--shadow-md);
+}
+.drawer.open{display:block}
+.drawer a{display:block;padding:13px 4px;font-size:16px;font-weight:600;border-bottom:1px solid var(--line-2)}
+.drawer .btn{margin-top:18px;width:100%}
+
+/* ---------- hero ---------- */
+.hero{position:relative;overflow:hidden;padding:86px 0 96px}
+.hero::before{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:
+    radial-gradient(1100px 520px at 82% -8%,rgba(31,92,70,.10),transparent 62%),
+    radial-gradient(720px 380px at 6% 108%,rgba(201,227,166,.30),transparent 66%);
+}
+.hero .wrap{position:relative}
+.hero-grid{display:grid;grid-template-columns:1.06fr .94fr;gap:56px;align-items:center}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:9px;
+  font-size:12px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;
+  color:var(--green);margin-bottom:26px;
+}
+.eyebrow .dot{width:6px;height:6px;border-radius:50%;background:var(--green);flex:0 0 auto}
+h1{
+  font-size:clamp(2.15rem,4.35vw,3.55rem);
+  line-height:1.14;letter-spacing:-.038em;margin-bottom:24px;
+}
+h1 em{font-style:normal;color:var(--green);position:relative;white-space:nowrap}
+h1 em::after{
+  content:"";position:absolute;left:0;right:0;bottom:.06em;height:.30em;
+  background:var(--lime);opacity:.55;z-index:-1;border-radius:2px;
+}
+.hero-lead{font-size:18px;line-height:1.75;color:var(--body);max-width:33em;margin-bottom:34px}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:40px}
+.hero-meta{
+  display:flex;flex-wrap:wrap;gap:10px 26px;padding-top:22px;border-top:1px solid var(--line);
+  font-size:13px;color:var(--muted);font-weight:500;
+}
+.hero-meta span{display:inline-flex;align-items:center;gap:7px}
+.hero-meta b{color:var(--ink);font-weight:600}
+.hero-meta .tick{width:14px;height:14px;color:var(--green);flex:0 0 auto}
+
+/* hero figure */
+.hero-figure{position:relative}
+.figure-card{
+  position:relative;border-radius:26px;background:linear-gradient(160deg,#ffffff 0%,#F6F5EF 100%);
+  border:1px solid var(--line);box-shadow:var(--shadow-md);padding:18px;
+}
+.figure-card svg{width:100%;height:auto;border-radius:16px}
+.figure-cap{
+  display:flex;align-items:center;justify-content:space-between;gap:12px;
+  padding:14px 8px 4px;font-size:11.5px;letter-spacing:.05em;text-transform:uppercase;
+  color:var(--muted);font-weight:600;
+}
+.figure-cap .tag{
+  letter-spacing:.06em;text-transform:none;font-size:11.5px;
+  color:var(--green-deep);background:var(--green-soft);padding:4px 10px;border-radius:999px;
+}
+
+/* ---------- fact strip ---------- */
+.facts{background:var(--white);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.facts-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0}
+.fact{padding:34px 28px 34px 0;border-right:1px solid var(--line-2)}
+.fact:last-child{border-right:0;padding-right:0}
+.fact:not(:first-child){padding-left:28px}
+.fact-k{font-size:11.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);margin-bottom:9px}
+.fact-v{font-size:16.5px;font-weight:600;line-height:1.45;letter-spacing:-.02em}
+.fact-v small{display:block;font-size:13px;font-weight:500;color:var(--muted);margin-top:4px;letter-spacing:0}
+
+/* ---------- section shell ---------- */
+.section{padding:100px 0}
+.section.alt{background:var(--paper-2)}
+.section-head{max-width:44em;margin-bottom:52px}
+.section-label{
+  display:flex;align-items:center;gap:12px;
+  font-size:11.5px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;
+  color:var(--muted);margin-bottom:18px;
+}
+.section-label::before{content:"";width:26px;height:1px;background:currentColor;opacity:.6}
+h2{font-size:clamp(1.65rem,2.6vw,2.25rem);line-height:1.28;letter-spacing:-.032em;margin-bottom:18px}
+.section-head p{font-size:16.5px;color:var(--body);line-height:1.78}
+
+/* ---------- about ---------- */
+.about-grid{display:grid;grid-template-columns:.92fr 1.08fr;gap:56px;align-items:start}
+.about-grid h2{margin-bottom:0}
+.about-body p{font-size:16.5px;color:var(--body);line-height:1.82;margin-bottom:22px}
+.about-body p:last-of-type{margin-bottom:0}
+.statement{
+  margin-top:32px;padding:22px 24px;border-left:3px solid var(--green);
+  background:#F3F4EE;border-radius:0 12px 12px 0;
+}
+.statement .s-main{font-size:17.5px;font-weight:700;letter-spacing:-.025em;line-height:1.5;margin-bottom:6px}
+.statement .s-sub{font-size:13.5px;color:var(--muted);line-height:1.7}
+.signature{margin-top:26px;padding-top:18px;border-top:1px solid var(--line-2);font-size:13px;color:var(--muted);display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.signature b{color:var(--ink);font-weight:600}
+/* ---------- tracks ---------- */
+.tracks{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.track{
+  position:relative;display:flex;flex-direction:column;
+  background:var(--white);border:1px solid var(--line);border-radius:var(--r-lg);
+  padding:38px 36px 32px;box-shadow:var(--shadow-sm);
+  transition:transform .35s var(--ease),box-shadow .35s var(--ease),border-color .35s;
+}
+.track:hover{transform:translateY(-4px);box-shadow:var(--shadow-md);border-color:#D6D2C6}
+.track-top{display:flex;align-items:center;gap:14px;margin-bottom:24px}
+.track-icon{width:46px;height:46px;border-radius:13px;background:var(--green-soft);display:flex;align-items:center;justify-content:center;flex:0 0 auto}
+.track-icon svg{width:24px;height:24px;color:var(--green)}
+.track-idx{font-size:11.5px;font-weight:700;letter-spacing:.14em;color:var(--muted)}
+.chip{
+  margin-left:auto;font-size:11.5px;font-weight:600;padding:5px 11px;border-radius:999px;
+  background:var(--green-soft);color:var(--green-deep);letter-spacing:0;
+}
+.chip.neutral{background:#F0EEE7;color:#6B777E}
+.track h3{font-size:24px;letter-spacing:-.035em;margin-bottom:7px}
+.track .subtitle{font-size:14.5px;color:var(--muted);font-weight:500;margin-bottom:22px}
+.track p.desc{font-size:15.5px;line-height:1.78;color:var(--body);margin-bottom:24px}
+.spec{display:flex;gap:11px;padding:11px 0;border-top:1px solid var(--line-2);font-size:14.5px;line-height:1.6;color:var(--ink-2)}
+.spec svg{flex:0 0 auto;width:17px;height:17px;margin-top:3px;color:var(--green)}
+.spec b{font-weight:600}
+.track-foot{
+  margin-top:auto;padding-top:22px;display:flex;align-items:center;gap:8px;
+  font-size:12.5px;color:var(--muted);font-weight:500;
+}
+.track-foot svg{width:15px;height:15px;color:var(--green);flex:0 0 auto}
+
+/* ---------- approach (dark) ---------- */
+.approach{background:var(--ink);color:#fff;position:relative;overflow:hidden}
+.approach::after{
+  content:"";position:absolute;right:-140px;top:-140px;width:520px;height:520px;border-radius:50%;
+  background:radial-gradient(circle,rgba(31,92,70,.55),transparent 68%);pointer-events:none;
+}
+.approach .wrap{position:relative}
+.approach .section-label{color:rgba(255,255,255,.5)}
+.approach h2{color:#fff;max-width:20em}
+.approach .section-head p{color:rgba(255,255,255,.68)}
+.principles{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:8px}
+.principle{padding:30px 34px 0 0;border-top:1px solid rgba(255,255,255,.16);margin-right:34px}
+.principle:last-child{margin-right:0;padding-right:0}
+.principle .num{font-family:var(--font-serif);font-size:15px;color:var(--lime);letter-spacing:.08em;margin-bottom:20px}
+.principle h3{font-size:19.5px;color:#fff;margin-bottom:12px;letter-spacing:-.025em}
+.principle p{font-size:14.8px;line-height:1.78;color:rgba(255,255,255,.68)}
+
+/* ---------- milestones ---------- */
+.milestones{position:relative;margin-top:8px}
+.milestones::before{content:"";position:absolute;left:127px;top:8px;bottom:8px;width:1px;background:var(--line)}
+.milestone{display:grid;grid-template-columns:112px 1fr;gap:44px;padding:22px 0;position:relative}
+.milestone::before{
+  content:"";position:absolute;left:123px;top:34px;width:9px;height:9px;border-radius:50%;
+  background:var(--white);border:2px solid var(--green);
+}
+.milestone.is-next::before{background:var(--green);border-color:var(--green)}
+.milestone .when{font-size:13.5px;font-weight:700;color:var(--ink);letter-spacing:.01em;padding-top:2px;text-align:right}
+.milestone .what h4{font-size:16.5px;font-weight:600;letter-spacing:-.02em;margin-bottom:5px}
+.milestone .what p{font-size:14.5px;color:var(--body);line-height:1.7}
+.milestone .what .planned{font-size:11.5px;font-weight:600;color:var(--green-deep);background:var(--green-soft);padding:3px 9px;border-radius:999px;margin-left:8px;vertical-align:2px;white-space:nowrap}
+
+/* ---------- contact ---------- */
+.contact{background:var(--green-deep);color:#fff;position:relative;overflow:hidden}
+.contact::before{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:
+    radial-gradient(680px 340px at 88% 0%,rgba(201,227,166,.16),transparent 60%),
+    radial-gradient(620px 320px at 0% 100%,rgba(255,255,255,.06),transparent 62%);
+}
+.contact .wrap{position:relative}
+.contact-grid{display:grid;grid-template-columns:1fr .92fr;gap:64px;align-items:start}
+.contact .section-label{color:rgba(255,255,255,.55)}
+.contact h2{color:#fff;font-size:clamp(1.7rem,2.9vw,2.45rem);max-width:18em}
+.contact p.lead{color:rgba(255,255,255,.72);font-size:16px;line-height:1.8;max-width:32em;margin-bottom:32px}
+.contact-actions{display:flex;flex-wrap:wrap;gap:12px}
+.contact-list{border-top:1px solid rgba(255,255,255,.2)}
+.c-row{display:flex;align-items:baseline;gap:18px;padding:18px 0;border-bottom:1px solid rgba(255,255,255,.14)}
+.c-row .k{width:82px;flex:0 0 auto;font-size:11.5px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:rgba(255,255,255,.5)}
+.c-row .v{font-size:16.5px;font-weight:500;letter-spacing:-.01em;word-break:break-all}
+.c-row .v a{border-bottom:1px solid rgba(255,255,255,.28);padding-bottom:1px;transition:border-color .2s}
+.c-row .v a:hover{border-color:var(--lime)}
+
+/* ---------- footer ---------- */
+.site-footer{background:var(--paper);padding:44px 0 52px;border-top:1px solid var(--line)}
+.footer-top{display:flex;flex-wrap:wrap;justify-content:space-between;gap:22px;align-items:flex-start}
+.footer-brand{display:flex;align-items:center;gap:11px}
+.footer-brand .brand-name{font-size:15px}
+.footer-nav{display:flex;flex-wrap:wrap;gap:8px 22px;font-size:13.5px;color:var(--body)}
+.footer-nav a:hover{color:var(--green-deep)}
+.footer-bottom{
+  margin-top:28px;padding-top:22px;border-top:1px solid var(--line-2);
+  display:flex;flex-wrap:wrap;justify-content:space-between;gap:14px;
+  font-size:12.5px;color:var(--muted);line-height:1.7;
+}
+.footer-note{max-width:54em}
+
+/* ---------- reveal ---------- */
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .reveal{opacity:1;transform:none;transition:none}
+  *{transition-duration:.001ms!important;animation-duration:.001ms!important}
+}
+
+/* ---------- responsive ---------- */
+@media (max-width:1024px){
+  .hero{padding:64px 0 76px}
+  .about-grid{grid-template-columns:1fr;gap:26px}
+  .hero-grid{grid-template-columns:1fr;gap:44px}
+  .hero-figure{max-width:520px}
+  .facts-grid{grid-template-columns:1fr 1fr}
+  .fact{border-right:0;padding:26px 0!important}
+  .fact:nth-child(odd){border-right:1px solid var(--line-2);padding-right:24px!important}
+  .fact:nth-child(even){padding-left:24px!important}
+  .fact:nth-child(-n+2){border-bottom:1px solid var(--line-2)}
+  .principles{grid-template-columns:1fr;gap:0}
+  .principle{margin-right:0;padding:26px 0 0;margin-bottom:26px}
+  .principle:last-child{margin-bottom:0}
+  .contact-grid{grid-template-columns:1fr;gap:40px}
+  .nav{display:none}
+  .header-cta{display:none}
+  .menu-btn{display:inline-flex}
+}
+@media (max-width:768px){
+  body{font-size:16px}
+  .wrap{padding:0 22px}
+  .section{padding:72px 0}
+  .tracks{grid-template-columns:1fr}
+  .track{padding:30px 26px 26px}
+  .milestones::before{left:0}
+  .milestone{grid-template-columns:1fr;gap:6px;padding:18px 0 18px 24px}
+  .milestone::before{left:-4px;top:26px}
+  .milestone .when{text-align:left;color:var(--green);font-size:12.5px;letter-spacing:.06em;text-transform:uppercase}
+  .figure-cap{flex-wrap:wrap}
+  .footer-top{flex-direction:column}
+}
+@media (max-width:520px){
+  .header-inner{height:64px;gap:14px}
+  .brand-sub{display:none}
+  .drawer{top:64px}
+  h1{font-size:1.95rem}
+  .hero-lead{font-size:16px}
+  .hero-actions .btn{width:100%}
+  .facts-grid{grid-template-columns:1fr}
+  .fact{border-right:0!important;padding:20px 0!important;border-bottom:1px solid var(--line-2)}
+  .fact:last-child{border-bottom:0}
+  .brand-name{font-size:15px}
+  .hero-meta{flex-direction:column;align-items:flex-start;gap:10px}
+  .c-row{flex-direction:column;gap:4px}
+  .c-row .k{width:auto}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main" data-en="Skip to content">본문으로 건너뛰기</a>
+
+<header class="site-header" id="siteHeader">
+  <div class="wrap header-inner">
+    <a class="brand" href="#top" aria-label="바실라바이오 홈" data-aria-en="Basilla Bio home">
+      <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true">
+        <rect width="40" height="40" rx="10" fill="#123B2D"/>
+        <path d="M20 29.5V17.6c0-4.2 3.4-7 8.2-7 -.7 6.2-3.4 9.6-8.2 10.2m0 0c0-4.8-3.4-7.6-8.2-7.6 .7 5.5 3.4 8.2 8.2 8.2" fill="none" stroke="#C9E3A6" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span>
+        <span class="brand-name">Basilla Bio</span>
+        <span class="brand-sub" data-en="Wearable Safety · Seoul">웨어러블 안전 · 서울</span>
+      </span>
+    </a>
+
+    <nav class="nav" aria-label="주 메뉴" data-aria-en="Main menu">
+      <a href="#about" data-en="About">회사 소개</a>
+      <a href="#work" data-en="What we build">사업 분야</a>
+      <a href="#approach" data-en="How we work">접근 방식</a>
+      <a href="#milestones" data-en="Milestones">연혁</a>
+      <a href="#contact" data-en="Contact">문의</a>
+    </nav>
+
+    <div class="header-tools">
+      <div class="lang" role="group" aria-label="언어 선택" data-aria-en="Language">
+        <button type="button" data-lang-btn="ko" aria-pressed="true">KR</button>
+        <button type="button" data-lang-btn="en" aria-pressed="false">EN</button>
+      </div>
+      <a class="btn btn-primary header-cta" href="#contact" data-en="Get in touch">문의하기</a>
+      <button class="menu-btn" type="button" id="menuBtn" aria-expanded="false" aria-controls="drawer" aria-label="메뉴 열기" data-aria-en="Open menu">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="drawer" id="drawer">
+  <a href="#about" data-en="About">회사 소개</a>
+  <a href="#work" data-en="What we build">사업 분야</a>
+  <a href="#approach" data-en="How we work">접근 방식</a>
+  <a href="#milestones" data-en="Milestones">연혁</a>
+  <a href="#contact" data-en="Contact">문의</a>
+  <a class="btn btn-primary" href="#contact" data-en="Get in touch">문의하기</a>
+</div>
+
+<main id="main">
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="top">
+    <div class="wrap">
+      <div class="hero-grid">
+        <div>
+          <div class="eyebrow"><span class="dot"></span><span data-en="Seoul, Korea · Est. October 2024">서울, 대한민국 · 2024년 10월 설립</span></div>
+          <h1>
+            <span data-en="Practical safety, <em>worn</em> every day.">일상과 현장의 안전을 바꾸는, <em>입는 기술</em>.</span>
+          </h1>
+          <p class="hero-lead" data-en="Basilla Bio builds wearable hardware and AI healthcare for the places where safety actually matters — a sidewalk full of obstacles, a long night shift on the road, a parent walking slowly at home. We start from the field, and we say only what we have verified.">
+            바실라바이오는 웨어러블 하드웨어와 AI 헬스케어로 일상과 현장의 안전을 바꾸는 회사입니다.
+            길 위의 장애물, 늦은 밤의 이동, 혼자 걷는 어르신의 하루 — 현장에서 본 문제를 작은 기기로 풀어갑니다.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#work">
+              <span data-en="Explore our work">사업 분야 보기</span>
+              <svg class="arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg>
+            </a>
+            <a class="btn btn-ghost" href="#contact" data-en="Contact us">문의하기</a>
+          </div>
+          <div class="hero-meta">
+            <span><svg class="tick" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><b data-en="Wearable safety">웨어러블 안전</b>&nbsp;<span data-en="hardware">하드웨어</span></span>
+            <span><svg class="tick" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><b data-en="Public R&amp;D">공공 R&amp;D</b>&nbsp;<span data-en="· B2G">· B2G</span></span>
+            <span><svg class="tick" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><b>K-Startup</b>&nbsp;<span data-en="member">정회원</span></span>
+          </div>
+        </div>
+
+        <div class="hero-figure reveal">
+          <div class="figure-card">
+            <!-- concept diagram: cap form factor with forward sensing field -->
+            <svg viewBox="0 0 520 352" role="img" aria-label="안전 캡의 전방 감지 개념도 (개념 설명용 도해)" data-aria-en="Concept diagram of a safety cap's forward sensing field">
+              <defs>
+                <pattern id="dots" width="18" height="18" patternUnits="userSpaceOnUse">
+                  <circle cx="1.4" cy="1.4" r="1.1" fill="#D3DAD2"/>
+                </pattern>
+                <linearGradient id="fadeMask" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#fff" stop-opacity="1"/>
+                  <stop offset=".85" stop-color="#fff" stop-opacity="0"/>
+                </linearGradient>
+                <mask id="dotsMask"><rect width="520" height="352" fill="url(#fadeMask)"/></mask>
+                <linearGradient id="capFill" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#2E7159"/>
+                  <stop offset="1" stop-color="#123B2D"/>
+                </linearGradient>
+                <linearGradient id="headFill" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#F6F5EF"/>
+                  <stop offset="1" stop-color="#EDEBE3"/>
+                </linearGradient>
+              </defs>
+
+              <rect width="520" height="352" rx="16" fill="#FBFAF7"/>
+              <rect width="520" height="352" rx="16" fill="url(#dots)" mask="url(#dotsMask)"/>
+
+              <!-- ground -->
+              <line x1="46" y1="318" x2="474" y2="318" stroke="#D8D4C7" stroke-width="1.6" stroke-dasharray="2 9" stroke-linecap="round"/>
+
+              <!-- wearer (abstract silhouette) -->
+              <path d="M124 320c4-34 36-52 82-52s78 18 82 52z" fill="#ECEBE4"/>
+              <path d="M192 246h28v26h-28z" fill="#ECEBE4"/>
+              <ellipse cx="206" cy="205" rx="53" ry="58" fill="#F5F4EE" stroke="#D2D8D0" stroke-width="1.6"/>
+              <path d="M256 202c6-1 9 4 8 11-1 7-4 11-8 11" fill="none" stroke="#D2D8D0" stroke-width="1.6" stroke-linecap="round"/>
+
+              <!-- sensing field -->
+              <g stroke="#2A6B52" fill="none" stroke-linecap="round">
+                <path d="M353.1 192.3A42 42 0 0 1 333 237.4" stroke-width="1.8" stroke-dasharray="4 6" opacity=".9"/>
+                <path d="M368.7 188.9A58 58 0 0 1 341 251.2" stroke-width="1.8" stroke-dasharray="4 6" opacity=".62"/>
+                <path d="M384.4 185.6A74 74 0 0 1 349 265.1" stroke-width="1.8" stroke-dasharray="4 6" opacity=".38"/>
+              </g>
+
+              <!-- cap -->
+              <path d="M147 196c2-39 26-61 59-61s57 22 59 61c-19 7-40 10-59 10s-40-3-59-10z" fill="url(#capFill)"/>
+              <path d="M254 186c28-6 60 0 80 10 6 3 5 9-2 10l-78 4z" fill="#1B4D3A"/>
+              <path d="M166 174c7-16 19-26 34-30" stroke="#7FAE93" stroke-width="2" fill="none" stroke-linecap="round" opacity=".75"/>
+              <circle cx="312" cy="197" r="5.4" fill="#C9E3A6"/>
+              <circle cx="312" cy="197" r="10" fill="none" stroke="#C9E3A6" stroke-width="1.4" opacity=".6"/>
+
+              <!-- annotations -->
+              <g font-family="'Helvetica Neue',Helvetica,Arial,'Noto Sans KR',sans-serif">
+                <line x1="317" y1="192" x2="386" y2="128" stroke="#BFC8BF" stroke-width="1.2"/>
+                <text x="392" y="126" font-size="11" letter-spacing="1.8" font-weight="700" fill="#4C5A52">SENSOR</text>
+                <text x="392" y="142" font-size="11" fill="#9AA49C">front / overhead</text>
+
+                <line x1="356" y1="247" x2="388" y2="247" stroke="#C6CFC6" stroke-width="1.2"/>
+                <text x="394" y="244" font-size="11" letter-spacing="1.8" font-weight="700" fill="#4C5A52">FIELD</text>
+                <text x="394" y="260" font-size="11" fill="#9AA49C">obstacle</text>
+
+                <text x="46" y="52" font-size="11" letter-spacing="2.2" font-weight="700" fill="#1F5C46">CAP FORM FACTOR</text>
+                <text x="46" y="70" font-size="11" fill="#9AA49C">hands-free · lightweight</text>
+              </g>
+            </svg>
+            <div class="figure-cap">
+              <span data-en="SafeHat · concept illustration">SafeHat · 개념 도해</span>
+              <span class="tag" data-en="In development">개발 중</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FACTS ============ -->
+  <section class="facts" aria-label="회사 개요" data-aria-en="Company at a glance">
+    <div class="wrap">
+      <div class="facts-grid">
+        <div class="fact reveal">
+          <div class="fact-k" data-en="Founded">설립</div>
+          <div class="fact-v">2024. 10.<small data-en="Seoul, Republic of Korea">서울, 대한민국</small></div>
+        </div>
+        <div class="fact reveal">
+          <div class="fact-k" data-en="What we make">만드는 것</div>
+          <div class="fact-v"><span data-en="Wearable safety &amp; sensing hardware">웨어러블 안전·센싱 하드웨어</span><small data-en="Cap, insole, footwear">캡 · 인솔 · 풋웨어</small></div>
+        </div>
+        <div class="fact reveal">
+          <div class="fact-k" data-en="Focus">지향</div>
+          <div class="fact-v"><span data-en="Assistive technology for daily life">일상을 돕는 보조 기술</span><small data-en="Blind &amp; low-vision, seniors">시각장애 · 시니어</small></div>
+        </div>
+        <div class="fact reveal">
+          <div class="fact-k" data-en="Programs">프로그램</div>
+          <div class="fact-v"><span data-en="K-Startup member">K-Startup 정회원</span><small data-en="Public R&amp;D · tech transfer">공공 R&amp;D · 기술이전 추진</small></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section" id="about">
+    <div class="wrap">
+      <div class="about-grid">
+        <div class="reveal">
+          <div class="section-label" data-en="About">회사 소개</div>
+          <h2>
+            <span data-en="A small hardware company that starts from the street, not the pitch deck.">화려한 계획보다, 현장에서 확인된 것부터.</span>
+          </h2>
+          <div class="statement">
+            <div class="s-main" data-en="Start low, widen only what has been verified.">낮게 들어가서, 검증되면 넓힙니다.</div>
+            <div class="s-sub" data-en="That is the order we work in: a working device first, a wider platform later.">
+              일하는 순서는 늘 같습니다. 먼저 실제로 쓸 수 있는 기기를 만들고, 그 다음에 넓힙니다.
+            </div>
+          </div>
+        </div>
+        <div class="about-body reveal">
+          <p data-en="Basilla Bio was founded in October 2024 in Seoul. We design and develop wearable devices that help people move, walk and work with less risk — for people who are blind or low-vision, for seniors living alone, and for workers whose day is spent on the road.">
+            바실라바이오는 2024년 10월 서울에서 출발한 웨어러블 하드웨어 기업입니다.
+            시각장애인의 보행, 혼자 사는 어르신의 이동, 길 위에서 일하는 사람의 하루 —
+            위험이 반복되는 지점에 작은 기기를 얹어 위험을 줄이는 일을 합니다.
+          </p>
+          <p data-en="Our work is currently at the research and prototype stage. We develop it together with public R&amp;D programs and field partners, so that what we claim is what has actually been checked.">
+            지금은 연구·시제품 단계입니다. 공공 R&amp;D와 현장 파트너와 함께 검증을 진행하며,
+            확인된 범위 안에서만 제품을 설명합니다.
+          </p>
+          <div class="signature">
+            <b data-en="Jaehun Kim">김재훈</b>
+            <span data-en="Founder &amp; CEO, Basilla Bio">대표 · 바실라바이오</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WORK ============ -->
+  <section class="section alt" id="work">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="section-label" data-en="What we build">사업 분야</div>
+        <h2><span data-en="Two tracks, one question: can it help someone move safely today?">두 개의 트랙, 하나의 질문.</span></h2>
+        <p data-en="We keep the portfolio small on purpose. One track focuses on assistive safety for people who are blind or low-vision; the other extends the same sensing and gait data work to senior healthcare and global footwear.">
+          제품군은 의도적으로 좁게 유지합니다. 한 트랙은 시각장애인을 위한 보조 안전 기기,
+          다른 트랙은 같은 센싱·보행 데이터 기술을 시니어 헬스케어와 풋웨어로 확장하는 사업입니다.
+        </p>
+      </div>
+
+      <div class="tracks">
+        <!-- Track 01 -->
+        <article class="track reveal">
+          <div class="track-top">
+            <span class="track-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 15.5c0-5 4.2-9 9.5-9s9.5 4 9.5 9"/><path d="M17.5 15.5c2.4 0 3.9.7 4.2 1.8H2.3c.3-1.1 1.8-1.8 4.2-1.8z"/><path d="M12 6.5V4"/></svg>
+            </span>
+            <span class="track-idx">TRACK 01</span>
+            <span class="chip" data-en="In development">개발 중</span>
+          </div>
+          <h3>SafeHat</h3>
+          <div class="subtitle" data-en="AI smart safety cap for people who are blind or low-vision">시각장애인을 위한 AI 스마트 안전 캡</div>
+          <p class="desc" data-en="A lightweight cap that senses obstacles in front and above, then guides the wearer with bone-conduction voice — so both hands stay free to walk, carry, or hold a cane.">
+            가벼운 캡 형태에 전방·상단 장애물 감지 센서와 골전도 음성 안내를 결합했습니다.
+            양손을 쓰지 않고도 보행 중 위험을 미리 알 수 있도록 돕는 웨어러블 안전 기기입니다.
+          </p>
+          <div class="spec">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+            <span><b data-en="Cap form factor">캡형 폼팩터</b> — <span data-en="lightweight, worn like an ordinary cap">일상적인 모자처럼 쓰는 가벼운 구조</span></span>
+          </div>
+          <div class="spec">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+            <span><b data-en="Front &amp; overhead sensing">전방·상단 감지</b> — <span data-en="sensors watch the path ahead and above">머리 위 간판·가지까지 함께 확인</span></span>
+          </div>
+          <div class="spec">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+            <span><b data-en="Bone-conduction guidance">골전도 음성 안내</b> — <span data-en="directions in the ear, ears stay open to the street">귀를 막지 않아 주변 소리를 그대로</span></span>
+          </div>
+          <div class="track-foot">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
+            <span data-en="Public procurement (B2G) · R&amp;D in progress">공공조달(B2G) 중심 · R&amp;D 진행 중</span>
+          </div>
+        </article>
+
+        <!-- Track 02 -->
+        <article class="track reveal">
+          <div class="track-top">
+            <span class="track-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c2.6 0 4.3 2 4.3 4.6 0 1.2-.3 2-.7 2.9-.4 1-.6 1.7-.6 2.7 0 .9.3 1.5.7 2.3.4.8.6 1.6.6 2.6 0 2.7-1.8 4.4-4.3 4.4s-4.3-1.7-4.3-4.4c0-1 .2-1.8.6-2.6.4-.8.7-1.4.7-2.3 0-1-.2-1.7-.6-2.7-.4-.9-.7-1.7-.7-2.9C7.7 5 9.4 3 12 3z"/><circle cx="12" cy="12.4" r="1.5"/></svg>
+            </span>
+            <span class="track-idx">TRACK 02</span>
+            <span class="chip neutral" data-en="R&amp;D · preparation">R&amp;D · 사업 준비</span>
+          </div>
+          <h3 data-en="Smart Insole &amp; Basilashoes">스마트 인솔 &amp; 바실라슈즈</h3>
+          <div class="subtitle" data-en="Gait sensing for senior care, and global footwear OEM">시니어 헬스케어를 위한 보행 센싱, 그리고 글로벌 풋웨어</div>
+          <p class="desc" data-en="The same sensing know-how, moved under the foot: gait data and wandering detection for seniors who live alone, paired with a footwear OEM and brand business built with manufacturing partners.">
+            같은 센싱 기술을 발밑으로 옮깁니다. 보행 데이터와 배회 감지로 혼자 사는 어르신의 이상 징후를
+            살피는 스마트 인솔을 연구하고, 제조 파트너와 함께 글로벌 풋웨어 OEM·브랜드 사업을 준비합니다.
+          </p>
+          <div class="spec">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+            <span><b data-en="Gait data">보행 데이터</b> — <span data-en="walking pattern as a daily health signal">걸음의 변화를 건강 신호로</span></span>
+          </div>
+          <div class="spec">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+            <span><b data-en="Wandering detection">배회 감지</b> — <span data-en="a quiet alert when a route goes wrong">평소와 다른 움직임을 조용히 알림</span></span>
+          </div>
+          <div class="spec">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+            <span><b data-en="Footwear OEM &amp; brand">풋웨어 OEM·브랜드</b> — <span data-en="with manufacturing partners in Asia">아시아 제조 파트너와 함께</span></span>
+          </div>
+          <div class="track-foot">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
+            <span data-en="Senior healthcare R&amp;D · global footwear">시니어 헬스케어 R&amp;D · 글로벌 풋웨어</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ APPROACH ============ -->
+  <section class="section approach" id="approach">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="section-label" data-en="How we work">접근 방식</div>
+        <h2><span data-en="We would rather be accurate than impressive.">정확한 것을 앞세우고, 과장은 뒤로 미룹니다.</span></h2>
+        <p data-en="Assistive technology is judged by the person wearing it, and by the public reviewer reading the documents. That is why we keep three rules in our work.">
+          보조 기술은 결국 쓰는 사람과, 그 문서를 심사하는 사람이 판단합니다.
+          그래서 일하는 방식에 세 가지 원칙을 두고 있습니다.
+        </p>
+      </div>
+      <div class="principles">
+        <div class="principle reveal">
+          <div class="num">01</div>
+          <h3 data-en="Start from the field">현장에서 시작합니다</h3>
+          <p data-en="The problem comes first from the street: a delivery ride at night, a walk with a white cane, a parent's slow steps. We turn what we saw there into a specification.">
+            문제는 늘 길 위에서 먼저 나옵니다. 늦은 밤의 라이딩, 흰 지팡이로 걷는 길, 부모님의 느려진 걸음.
+            현장에서 본 것을 제품 사양으로 옮기는 데서 시작합니다.
+          </p>
+        </div>
+        <div class="principle reveal">
+          <div class="num">02</div>
+          <h3 data-en="Say only what is verified">검증된 것만 말합니다</h3>
+          <p data-en="In-development technology is labelled as such. We separate a concept from a measured result, and we keep our public materials at the level the evidence supports.">
+            개발 중인 기술은 개발 중이라고 표기합니다. 개념과 측정된 결과를 구분하고,
+            공개 자료는 근거가 닿는 수준까지만 씁니다.
+          </p>
+        </div>
+        <div class="principle reveal">
+          <div class="num">03</div>
+          <h3 data-en="Validate together">함께 실증합니다</h3>
+          <p data-en="Public R&amp;D programs, field institutions and manufacturing partners are part of the build, not an afterthought. Each stage is confirmed with the people who would actually use it.">
+            공공 R&amp;D, 현장 기관, 제조 파트너는 사업의 뒤가 아니라 과정입니다.
+            단계마다 실제로 쓰게 될 사람과 함께 확인합니다.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MILESTONES ============ -->
+  <section class="section" id="milestones">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="section-label" data-en="Milestones">연혁</div>
+        <h2><span data-en="Where we are, honestly.">지금 어디까지 와 있는지.</span></h2>
+        <p data-en="A short record, with the planned steps marked as planned.">
+          짧은 기록입니다. 예정된 단계는 예정이라고 표시했습니다.
+        </p>
+      </div>
+
+      <div class="milestones reveal">
+        <div class="milestone">
+          <div class="when">2024. 10.</div>
+          <div class="what">
+            <h4 data-en="Basilla Bio founded in Seoul">바실라바이오 설립 (서울)</h4>
+            <p data-en="Started as a one-person business to develop and sell practical safety hardware.">실용적인 안전 하드웨어를 만들고 판매하기 위한 개인사업자로 출발했습니다.</p>
+          </div>
+        </div>
+        <div class="milestone">
+          <div class="when">2026</div>
+          <div class="what">
+            <h4 data-en="SafeHat &amp; smart insole: problem definition and prototype">SafeHat · 스마트 인솔 — 문제 정의와 시제품</h4>
+            <p data-en="Field observation, sensor and form-factor design, and prototype planning for both tracks.">현장 관찰에서 출발해 센서 구성과 폼팩터를 설계하고, 두 트랙의 시제품 제작을 준비하고 있습니다.</p>
+          </div>
+        </div>
+        <div class="milestone">
+          <div class="when">2026. 11.</div>
+          <div class="what">
+            <h4 data-en="K-Startup member (Mapo) approved">K-Startup 마포 정회원 승인</h4>
+            <p data-en="Registered as a regular member of the K-Startup Mapo center.">K-Startup 마포 창업지원센터 정회원으로 승인받았습니다.</p>
+          </div>
+        </div>
+        <div class="milestone is-next">
+          <div class="when">2027</div>
+          <div class="what">
+            <h4><span data-en="Public R&amp;D programs and field validation">공공 R&amp;D 지원과 현장 실증</span><span class="planned" data-en="Planned">예정</span></h4>
+            <p data-en="Application to public assistive-technology R&amp;D programs, with validation at field institutions.">보조공학기기 공공 R&amp;D 사업 지원과 실증 기관에서의 검증을 준비하고 있습니다.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section contact" id="contact">
+    <div class="wrap">
+      <div class="contact-grid">
+        <div class="reveal">
+          <div class="section-label" data-en="Contact">문의</div>
+          <h2>
+            <span data-en="If our work could help someone you know, let's talk.">도움이 필요한 사람과 이어져 있다면, 편하게 연락 주세요.</span>
+          </h2>
+          <p class="lead" data-en="We welcome public institutions, rehabilitation and care organizations, manufacturing partners, and program reviewers. We reply to every serious inquiry.">
+            공공기관·재활·돌봄 기관 담당자, 제조·유통 파트너, 사업 심사 관계자 모두 환영합니다.
+            실질적인 문의에는 모두 답변드립니다.
+          </p>
+          <div class="contact-actions">
+            <a class="btn btn-light" href="mailto:jaehun@basillabio.com">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/><path d="m3 6.5 9 6.5 9-6.5"/></svg>
+              <span data-en="Email us">이메일 보내기</span>
+            </a>
+            <a class="btn btn-outline-light" href="tel:+821039459459" data-en="Call">전화하기</a>
+          </div>
+        </div>
+
+        <div class="contact-list reveal">
+          <div class="c-row">
+            <div class="k" data-en="Email">이메일</div>
+            <div class="v"><a href="mailto:jaehun@basillabio.com">jaehun@basillabio.com</a></div>
+          </div>
+          <div class="c-row">
+            <div class="k" data-en="Phone">전화</div>
+            <div class="v"><a href="tel:+821039459459">+82 10-3945-9459</a></div>
+          </div>
+          <div class="c-row">
+            <div class="k" data-en="Web">웹사이트</div>
+            <div class="v">www.basillabio.com</div>
+          </div>
+          <div class="c-row">
+            <div class="k" data-en="Based in">소재지</div>
+            <div class="v" data-en="Seoul, Republic of Korea">서울, 대한민국</div>
+          </div>
+          <div class="c-row">
+            <div class="k" data-en="CEO">대표</div>
+            <div class="v" data-en="Jaehun Kim, MBA">김재훈 (Jaehun Kim, MBA)</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true">
+          <rect width="40" height="40" rx="10" fill="#123B2D"/>
+          <path d="M20 29.5V17.6c0-4.2 3.4-7 8.2-7 -.7 6.2-3.4 9.6-8.2 10.2m0 0c0-4.8-3.4-7.6-8.2-7.6 .7 5.5 3.4 8.2 8.2 8.2" fill="none" stroke="#C9E3A6" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span class="brand-name">Basilla Bio <span style="font-weight:500;color:var(--muted)">· 바실라바이오</span></span>
+      </div>
+      <nav class="footer-nav" aria-label="바닥글 메뉴" data-aria-en="Footer menu">
+        <a href="#about" data-en="About">회사 소개</a>
+        <a href="#work" data-en="What we build">사업 분야</a>
+        <a href="#approach" data-en="How we work">접근 방식</a>
+        <a href="#milestones" data-en="Milestones">연혁</a>
+        <a href="#contact" data-en="Contact">문의</a>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <div>© 2026 Basilla Bio. <span data-en="All rights reserved.">All rights reserved.</span></div>
+      <div class="footer-note" data-en="Product information on this page describes technology under development. Performance, certification and launch schedules are not yet final.">
+        본 페이지의 제품 정보는 개발 중인 기술에 대한 설명이며, 성능·인증·출시 일정은 아직 확정되지 않았습니다.
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  "use strict";
+
+  /* ---------- language ---------- */
+  var STORAGE_KEY = "basilla-lang";
+  var TITLE = {
+    ko: "바실라바이오 · Basilla Bio — 일상과 현장의 안전을 바꾸는 웨어러블 하드웨어",
+    en: "Basilla Bio — Wearable safety & healthcare hardware, Seoul"
+  };
+  var nodes = Array.prototype.slice.call(document.querySelectorAll("[data-en]"));
+  var ariaNodes = Array.prototype.slice.call(document.querySelectorAll("[data-aria-en]"));
+
+  // keep the Korean rendering as the base
+  nodes.forEach(function(el){ el.setAttribute("data-ko", el.innerHTML); });
+  ariaNodes.forEach(function(el){
+    el.setAttribute("data-aria-ko", el.getAttribute("aria-label") || el.getAttribute("data-aria-ko") || "");
+  });
+
+  function setLang(lang){
+    var isEn = lang === "en";
+    document.documentElement.lang = isEn ? "en" : "ko";
+    document.body.classList.toggle("lang-en", isEn);
+    nodes.forEach(function(el){
+      el.innerHTML = isEn ? el.getAttribute("data-en") : el.getAttribute("data-ko");
+    });
+    ariaNodes.forEach(function(el){
+      var key = isEn ? "data-aria-en" : "data-aria-ko";
+      var val = el.getAttribute(key);
+      if (val) el.setAttribute("aria-label", val);
+    });
+    document.title = TITLE[isEn ? "en" : "ko"];
+    var desc = document.querySelector('meta[name="description"]');
+    if (desc) {
+      var base = desc.getAttribute("data-desc-ko") || desc.getAttribute("content");
+      if (!desc.getAttribute("data-desc-ko")) desc.setAttribute("data-desc-ko", base);
+      desc.setAttribute("content", isEn ? desc.getAttribute("data-en") : desc.getAttribute("data-desc-ko"));
+    }
+    Array.prototype.forEach.call(document.querySelectorAll("[data-lang-btn]"), function(btn){
+      btn.setAttribute("aria-pressed", btn.getAttribute("data-lang-btn") === lang ? "true" : "false");
+    });
+    try { localStorage.setItem(STORAGE_KEY, lang); } catch(e){}
+  }
+
+  Array.prototype.forEach.call(document.querySelectorAll("[data-lang-btn]"), function(btn){
+    btn.addEventListener("click", function(){ setLang(btn.getAttribute("data-lang-btn")); });
+  });
+
+  var saved = null;
+  try { saved = localStorage.getItem(STORAGE_KEY); } catch(e){}
+  if (saved === "en") { setLang("en"); }
+  else if (!saved) {
+    var nav = (navigator.language || "ko").toLowerCase();
+    if (nav.indexOf("ko") !== 0) setLang("en");
+  }
+
+  /* ---------- header state + active nav ---------- */
+  var header = document.getElementById("siteHeader");
+  function onScroll(){
+    if (window.scrollY > 8) header.classList.add("is-scrolled");
+    else header.classList.remove("is-scrolled");
+  }
+  onScroll();
+  window.addEventListener("scroll", onScroll, {passive:true});
+
+  var sections = ["about","work","approach","milestones","contact"]
+    .map(function(id){ return document.getElementById(id); })
+    .filter(Boolean);
+  var navLinks = Array.prototype.slice.call(document.querySelectorAll(".nav a"));
+  if ("IntersectionObserver" in window && sections.length){
+    var spy = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if (!entry.isIntersecting) return;
+        var id = entry.target.id;
+        navLinks.forEach(function(a){
+          a.classList.toggle("is-active", a.getAttribute("href") === "#" + id);
+        });
+      });
+    }, {rootMargin:"-45% 0px -50% 0px", threshold:0});
+    sections.forEach(function(s){ spy.observe(s); });
+  }
+
+  /* ---------- mobile drawer ---------- */
+  var menuBtn = document.getElementById("menuBtn");
+  var drawer = document.getElementById("drawer");
+  function closeDrawer(){
+    drawer.classList.remove("open");
+    menuBtn.setAttribute("aria-expanded","false");
+  }
+  menuBtn.addEventListener("click", function(){
+    var open = drawer.classList.toggle("open");
+    menuBtn.setAttribute("aria-expanded", open ? "true" : "false");
+  });
+  Array.prototype.forEach.call(drawer.querySelectorAll("a"), function(a){
+    a.addEventListener("click", closeDrawer);
+  });
+  document.addEventListener("keydown", function(e){
+    if (e.key === "Escape") closeDrawer();
+  });
+
+  /* ---------- reveal ---------- */
+  var reveals = Array.prototype.slice.call(document.querySelectorAll(".reveal"));
+  if ("IntersectionObserver" in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if (entry.isIntersecting){
+          entry.target.classList.add("in");
+          io.unobserve(entry.target);
+        }
+      });
+    }, {rootMargin:"0px 0px -8% 0px", threshold:0.08});
+    reveals.forEach(function(el, i){
+      el.style.transitionDelay = (i % 4) * 70 + "ms";
+      io.observe(el);
+    });
+  } else {
+    reveals.forEach(function(el){ el.classList.add("in"); });
+  }
+})();
+</script>
+</body>
+</html>
