@@ -1,252 +1,1315 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>바실라바이오 · 준비 중</title>
-<meta name="description" content="바실라바이오(Basilla Bio)가 엄선된 제품을 준비하고 있습니다. 더 좋은 제품으로 곧 인사드리겠습니다.">
-<meta name="theme-color" content="#FBFAF7">
-<meta name="naver-site-verification" content="d50f872cebd9b499ab9e4d5f1be76befc0d2ef51">
-<link rel="canonical" href="https://www.basillabio.com/">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Basilla Bio">
-<meta property="og:title" content="바실라바이오 · 준비 중">
-<meta property="og:description" content="바실라바이오(Basilla Bio)가 엄선된 제품을 준비하고 있습니다. 더 좋은 제품으로 곧 인사드리겠습니다.">
-<meta property="og:url" content="https://www.basillabio.com/">
-<meta property="og:image" content="https://www.basillabio.com/og-image.png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta property="og:locale" content="ko_KR">
-<meta property="og:locale:alternate" content="en_US">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="바실라바이오 · 준비 중">
-<meta name="twitter:description" content="바실라바이오(Basilla Bio)가 엄선된 제품을 준비하고 있습니다.">
-<meta name="twitter:image" content="https://www.basillabio.com/og-image.png">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23123B2D'/%3E%3Cpath d='M32 46V26c0-6 5-10 12-10-1 9-5 14-12 15m0 0c0-7-5-11-12-11 1 8 5 12 12 12' fill='none' stroke='%23C9E3A6' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "바실라바이오",
-  "alternateName": "Basilla Bio",
-  "url": "https://www.basillabio.com/",
-  "email": "jaehun@basillabio.com",
-  "identifier": { "@type": "PropertyValue", "propertyID": "사업자등록번호", "value": "311-11-98977" },
-  "founder": { "@type": "Person", "name": "김재훈" }
-}
-</script>
-<style>
-/* ============================================================
-   Basilla Bio — Coming Soon (single screen, no external requests)
-   ============================================================ */
-:root{
-  --paper:#FBFAF7;
-  --ink:#10161A;
-  --body:#4C575D;
-  --muted:#636E75;
-  --line:#E6E3DA;
-  --line-2:#EFECE4;
-  --green:#1F5C46;
-  --green-deep:#123B2D;
-  --lime:#C9E3A6;
-  --font-sans:"Helvetica Neue",Helvetica,Arial,"Apple SD Gothic Neo","Noto Sans KR","Noto Sans CJK KR","Malgun Gothic","Segoe UI",Roboto,system-ui,sans-serif;
-  --ease:cubic-bezier(.22,.61,.36,1);
-  --pad:clamp(20px,4vw,56px);
-}
-*,*::before,*::after{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%}
-body{
-  margin:0;min-height:100svh;display:flex;flex-direction:column;
-  background:var(--paper);color:var(--ink);
-  font-family:var(--font-sans);font-size:17px;line-height:1.7;
-  letter-spacing:-.01em;-webkit-font-smoothing:antialiased;
-  word-break:keep-all;overflow-x:hidden;
-}
-h1,p{margin:0}
-a{color:inherit;text-decoration:none}
-svg{display:block}
-::selection{background:var(--lime);color:var(--green-deep)}
-:focus-visible{outline:2px solid var(--green);outline-offset:4px;border-radius:6px}
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#071410" />
+  <meta name="description" content="BASILLA BIO — 자연과 과학이 만나는 건강한 내일. 매일의 건강을, 정직하게." />
+  <meta name="naver-site-verification" content="d50f872cebd9b499ab9e4d5f1be76befc0d2ef51" />
+  <link rel="canonical" href="https://www.basillabio.com/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Basilla Bio" />
+  <meta property="og:title" content="바실라바이오 BASILLA BIO · Coming Soon" />
+  <meta property="og:description" content="자연과 과학이 만나는 건강한 내일. 매일의 건강을, 정직하게. 곳 인사드리겠습니다." />
+  <meta property="og:url" content="https://www.basillabio.com/" />
+  <meta property="og:image" content="https://www.basillabio.com/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:locale" content="ko_KR" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="바실라바이오 BASILLA BIO · Coming Soon" />
+  <meta name="twitter:description" content="자연과 과학이 만나는 건강한 내일. 곳 인사드리겠습니다." />
+  <meta name="twitter:image" content="https://www.basillabio.com/og-image.png" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23123B2D'/%3E%3Cpath d='M32 46V26c0-6 5-10 12-10-1 9-5 14-12 15m0 0c0-7-5-11-12-11 1 8 5 12 12 12' fill='none' stroke='%23C9E3A6' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "바실라바이오",
+    "alternateName": "Basilla Bio",
+    "url": "https://www.basillabio.com/",
+    "email": "jaehun@basillabio.com",
+    "identifier": { "@type": "PropertyValue", "propertyID": "사업자등록번호", "value": "311-11-98977" },
+    "founder": { "@type": "Person", "name": "김재훈" }
+  }
+  </script>
+  <title>바실라바이오 BASILLA BIO · Coming Soon</title>
+  <style>
+    :root {
+      --bg-deep: #06120f;
+      --bg-forest: #0c211b;
+      --accent-teal: #1b5e5c;
+      --accent-mint: #89dec9;
+      --accent-moss: #486b56;
+      --ivory: #f4f1ea;
+      --ivory-soft: rgba(244, 241, 234, 0.78);
+      --ivory-muted: rgba(244, 241, 234, 0.56);
+      --border-hairline: rgba(244, 241, 234, 0.18);
+      --border-strong: rgba(244, 241, 234, 0.34);
+      --glass-bg: rgba(12, 33, 27, 0.34);
+      --glass-hover: rgba(137, 222, 201, 0.14);
+      --focus-ring: #9ae8d4;
+      --ease-out-expo: cubic-bezier(0.19, 1, 0.22, 1);
+      --ease-soft: cubic-bezier(0.37, 0, 0.63, 1);
+      --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", sans-serif;
+    }
 
-/* ---------- quiet background ---------- */
-.bg{position:fixed;inset:0;pointer-events:none;z-index:0;
-  background:
-    radial-gradient(1100px 560px at 82% -12%,rgba(31,92,70,.075),transparent 62%),
-    radial-gradient(820px 460px at 4% 110%,rgba(201,227,166,.26),transparent 64%);
-}
-.bg::after{
-  content:"";position:absolute;right:max(-8vw,-120px);bottom:max(-14vh,-120px);
-  width:min(44vw,520px);aspect-ratio:1;
-  background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M32 54V28c0-8 6.5-13 15-13-1.2 11.5-6.5 18-15 19m0 0c0-9-6.5-14-15-14 1.2 10.5 6.5 15.5 15 15.5' fill='none' stroke='%231F5C46' stroke-width='1.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/contain no-repeat;
-  opacity:.055;
-}
-.wrap{width:100%;max-width:1120px;margin:0 auto;padding:0 var(--pad)}
-header,main,footer{position:relative;z-index:1}
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-/* ---------- header ---------- */
-.site-header{border-bottom:1px solid var(--line-2)}
-.header-inner{display:flex;align-items:center;justify-content:space-between;gap:20px;height:84px}
-.brand{display:inline-flex;align-items:center;gap:11px}
-.brand-mark{width:28px;height:28px;flex:0 0 auto}
-.brand-name{
-  font-size:13px;font-weight:600;letter-spacing:.24em;text-transform:uppercase;
-  color:var(--ink);line-height:1;
-}
-.lang{
-  display:flex;align-items:center;gap:2px;
-  background:rgba(16,22,26,.045);border-radius:999px;padding:3px;
-}
-.lang button{
-  appearance:none;border:0;background:transparent;color:var(--muted);
-  font:inherit;font-size:11px;font-weight:700;letter-spacing:.1em;
-  padding:5px 10px;border-radius:999px;cursor:pointer;
-  transition:background .2s,color .2s;
-}
-.lang button[aria-pressed="true"]{background:#fff;color:var(--green-deep);box-shadow:0 1px 3px rgba(16,22,26,.1)}
-.lang button:hover{color:var(--green-deep)}
+    html {
+      height: 100%;
+      background-color: var(--bg-deep);
+      color: var(--ivory);
+      font-family: var(--font-sans);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      text-rendering: optimizeLegibility;
+    }
 
-/* ---------- main ---------- */
-main{flex:1 1 auto;display:flex;align-items:center;justify-content:center;padding:clamp(48px,9vh,104px) 0}
-.hero{width:100%;max-width:720px;margin:0 auto;padding:0 var(--pad);text-align:center}
+    body {
+      position: relative;
+      min-height: 100vh;
+      min-height: 100svh;
+      min-height: 100dvh;
+      overflow-x: hidden;
+      background-color: var(--bg-deep);
+      color: var(--ivory);
+      display: flex;
+      flex-direction: column;
+      isolation: isolate;
+    }
 
-.badge{
-  display:inline-flex;align-items:center;gap:9px;
-  font-size:10.5px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;
-  color:var(--green);background:rgba(31,92,70,.06);
-  border:1px solid rgba(31,92,70,.14);
-  padding:7px 14px 7px 12px;border-radius:999px;
-  margin-bottom:clamp(26px,4vh,38px);
-}
-.badge .dot{
-  width:5px;height:5px;border-radius:50%;background:var(--green);
-  animation:breathe 3.2s var(--ease) infinite;
-}
-@keyframes breathe{0%,100%{opacity:.35;transform:scale(.85)}50%{opacity:1;transform:scale(1)}}
+    /* Fullscreen Motion Stage */
+    .stage {
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      overflow: hidden;
+      background:
+        radial-gradient(120% 90% at 18% 18%, rgba(27, 94, 92, 0.42) 0%, rgba(12, 33, 27, 0.14) 48%, transparent 72%),
+        radial-gradient(100% 90% at 82% 78%, rgba(72, 107, 86, 0.36) 0%, rgba(6, 18, 15, 0) 68%),
+        linear-gradient(145deg, #050f0c 0%, #091b16 52%, #071615 100%);
+      pointer-events: none;
+    }
 
-h1{
-  font-size:clamp(1.85rem,4.2vw,3.05rem);
-  font-weight:500;line-height:1.36;letter-spacing:-.035em;
-  color:var(--ink);margin-bottom:clamp(18px,3vh,26px);
-  text-wrap:balance;
-}
-.lead{
-  font-size:clamp(15px,1.25vw,16.5px);line-height:1.8;
-  color:var(--body);letter-spacing:-.005em;
-  max-width:30em;margin:0 auto;text-wrap:balance;
-}
+    .stage canvas {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
 
-/* ---------- footer ---------- */
-.site-footer{border-top:1px solid var(--line);padding:26px 0 30px}
-.footer-inner{display:flex;align-items:center;justify-content:space-between;gap:14px 28px;flex-wrap:wrap}
-.contact{display:flex;align-items:baseline;gap:11px;min-width:0}
-.contact .label{
-  font-size:9.5px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;
-  color:var(--muted);flex:0 0 auto;
-}
-.contact a{
-  font-size:14.5px;font-weight:500;color:var(--ink);
-  border-bottom:1px solid rgba(16,22,26,.22);padding-bottom:1px;
-  transition:border-color .2s,color .2s;
-  word-break:break-all;
-}
-.contact a:hover{color:var(--green-deep);border-color:var(--green)}
-.legal{font-size:11.5px;line-height:1.7;color:var(--muted);letter-spacing:0}
+    /* Subtle Atmospheric Vignette & Light Veil */
+    .stage-veil {
+      position: absolute;
+      inset: -6%;
+      background:
+        radial-gradient(circle at 50% 48%, transparent 30%, rgba(4, 12, 10, 0.52) 100%),
+        linear-gradient(to bottom, rgba(4, 12, 10, 0.34) 0%, transparent 22%, transparent 76%, rgba(4, 12, 10, 0.48) 100%);
+      transition: transform 1.2s var(--ease-out-expo);
+      will-change: transform;
+    }
 
-/* ---------- entrance ---------- */
-.hero > *{animation:rise .9s var(--ease) both}
-.hero > .badge{animation-delay:.05s}
-.hero > h1{animation-delay:.14s}
-.hero > .lead{animation-delay:.24s}
-@keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+    /* Ultra-fine film texture via inline SVG data URI */
+    .stage-grain {
+      position: absolute;
+      inset: 0;
+      opacity: 0.04;
+      mix-blend-mode: overlay;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.82' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+      background-size: 160px 160px;
+    }
 
-@media (prefers-reduced-motion:reduce){
-  .hero > *{animation:none}
-  .badge .dot{animation:none;opacity:.8}
-  *{transition-duration:.001ms!important;animation-duration:.001ms!important}
-}
+    /* Reduced motion subtle ambient shimmer */
+    @media (prefers-reduced-motion: reduce) {
+      .stage {
+        background:
+          radial-gradient(95% 80% at 22% 24%, rgba(35, 112, 106, 0.42) 0%, transparent 62%),
+          radial-gradient(90% 75% at 78% 72%, rgba(72, 107, 86, 0.36) 0%, transparent 64%),
+          radial-gradient(65% 55% at 54% 44%, rgba(137, 222, 201, 0.14) 0%, transparent 68%),
+          linear-gradient(145deg, #05100d 0%, #0b1f1a 55%, #071615 100%);
+      }
+      .stage-veil {
+        animation: gentleBreathe 12s var(--ease-soft) infinite alternate;
+      }
+      .badge-dot {
+        animation: none !important;
+      }
+    }
 
-@media (max-width:640px){
-  .header-inner{height:72px}
-  .brand-name{font-size:12px;letter-spacing:.2em}
-  main{padding:clamp(40px,10vh,72px) 0}
-  h1{letter-spacing:-.028em}
-  .site-footer{padding:22px 0 26px}
-  .footer-inner{flex-direction:column;align-items:flex-start;gap:12px}
-}
-</style>
+    @keyframes gentleBreathe {
+      0% { opacity: 0.92; }
+      100% { opacity: 1; }
+    }
+
+    /* Main Layout Shell */
+    .shell {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      max-width: 1440px;
+      margin: 0 auto;
+      min-height: 100vh;
+      min-height: 100svh;
+      min-height: 100dvh;
+      padding:
+        clamp(20px, 3.6vw, 44px)
+        clamp(20px, 5vw, 72px)
+        clamp(20px, 3.2vw, 38px);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: clamp(32px, 6vh, 64px);
+    }
+
+    /* Header */
+    .site-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      animation: fadeRise 1.1s var(--ease-out-expo) both;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: clamp(10px, 1.4vw, 14px);
+      text-decoration: none;
+      color: var(--ivory);
+      border-radius: 6px;
+      padding: 4px 2px;
+    }
+
+    .brand-mark {
+      width: clamp(24px, 2.4vw, 30px);
+      height: clamp(24px, 2.4vw, 30px);
+      flex-shrink: 0;
+      color: var(--accent-mint);
+      filter: drop-shadow(0 0 12px rgba(137, 222, 201, 0.24));
+    }
+
+    .brand-wordmark {
+      font-size: clamp(0.84rem, 1.15vw, 1rem);
+      font-weight: 500;
+      letter-spacing: 0.26em;
+      text-transform: uppercase;
+      color: var(--ivory);
+      line-height: 1;
+      white-space: nowrap;
+    }
+
+    /* Language Pill Toggle */
+    .lang-toggle {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      padding: 3px;
+      border-radius: 999px;
+      border: 1px solid var(--border-hairline);
+      background: rgba(8, 23, 19, 0.45);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.18);
+    }
+
+    .lang-btn {
+      position: relative;
+      z-index: 1;
+      appearance: none;
+      border: 0;
+      background: transparent;
+      color: var(--ivory-muted);
+      font-family: var(--font-sans);
+      font-size: clamp(0.68rem, 0.85vw, 0.76rem);
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      padding: 6px 12px;
+      min-width: 42px;
+      border-radius: 999px;
+      cursor: pointer;
+      transition: color 0.35s ease, background-color 0.35s ease;
+    }
+
+    .lang-btn:hover {
+      color: var(--ivory);
+    }
+
+    .lang-btn[aria-pressed="true"] {
+      color: #071713;
+      background-color: var(--ivory);
+    }
+
+    .lang-divider {
+      width: 1px;
+      height: 10px;
+      background-color: rgba(244, 241, 234, 0.16);
+      margin: 0 1px;
+      pointer-events: none;
+    }
+
+    /* Center Hero */
+    .hero {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      max-width: 920px;
+      width: 100%;
+      margin: 0 auto;
+      padding: clamp(12px, 3vh, 32px) 0;
+    }
+
+    .translatable {
+      transition: opacity 0.26s ease, transform 0.26s ease;
+      will-change: opacity, transform;
+    }
+
+    .is-switching .translatable {
+      opacity: 0;
+      transform: translateY(5px);
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 18px;
+      border-radius: 999px;
+      border: 1px solid var(--border-hairline);
+      background: rgba(10, 28, 23, 0.32);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      font-size: clamp(0.66rem, 0.85vw, 0.76rem);
+      font-weight: 500;
+      letter-spacing: 0.32em;
+      text-transform: uppercase;
+      color: var(--ivory-soft);
+      margin-bottom: clamp(24px, 4vh, 40px);
+      animation: fadeRise 1.15s var(--ease-out-expo) 0.1s both;
+    }
+
+    .badge-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: var(--accent-mint);
+      box-shadow: 0 0 10px rgba(137, 222, 201, 0.85);
+      animation: pulseDot 3.6s ease-in-out infinite;
+      flex-shrink: 0;
+    }
+
+    @keyframes pulseDot {
+      0%, 100% {
+        opacity: 0.45;
+        transform: scale(0.86);
+      }
+      50% {
+        opacity: 1;
+        transform: scale(1.15);
+      }
+    }
+
+    .headline {
+      font-size: clamp(2rem, 5.2vw, 4.45rem);
+      font-weight: 300;
+      line-height: 1.24;
+      letter-spacing: -0.025em;
+      color: var(--ivory);
+      text-wrap: balance;
+      word-break: keep-all;
+      margin-bottom: clamp(18px, 3vh, 28px);
+      text-shadow: 0 10px 38px rgba(3, 10, 8, 0.42);
+      animation: fadeRise 1.25s var(--ease-out-expo) 0.2s both;
+    }
+
+    html[lang="en"] .headline {
+      letter-spacing: -0.02em;
+      line-height: 1.14;
+      font-weight: 300;
+    }
+
+    .headline-line {
+      display: block;
+    }
+
+    .subcopy {
+      max-width: 560px;
+      font-size: clamp(0.95rem, 1.45vw, 1.18rem);
+      font-weight: 300;
+      line-height: 1.72;
+      letter-spacing: -0.005em;
+      color: var(--ivory-soft);
+      word-break: keep-all;
+      margin-bottom: clamp(32px, 5.2vh, 52px);
+      animation: fadeRise 1.3s var(--ease-out-expo) 0.32s both;
+    }
+
+    .subcopy-line {
+      display: block;
+    }
+
+    /* Glass Outline Inquiry CTA */
+    .cta-wrap {
+      animation: fadeRise 1.35s var(--ease-out-expo) 0.44s both;
+    }
+
+    .cta-btn {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      padding: clamp(13px, 1.6vw, 16px) clamp(26px, 3.2vw, 36px);
+      border-radius: 999px;
+      border: 1px solid var(--border-strong);
+      background: var(--glass-bg);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      color: var(--ivory);
+      text-decoration: none;
+      font-size: clamp(0.86rem, 1.05vw, 0.96rem);
+      font-weight: 400;
+      letter-spacing: 0.06em;
+      overflow: hidden;
+      transition:
+        border-color 0.4s var(--ease-out-expo),
+        background-color 0.4s var(--ease-out-expo),
+        transform 0.4s var(--ease-out-expo),
+        box-shadow 0.4s var(--ease-out-expo);
+      box-shadow:
+        inset 0 1px 0 rgba(244, 241, 234, 0.14),
+        0 12px 34px rgba(3, 11, 9, 0.28);
+    }
+
+    .cta-btn::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        110deg,
+        transparent 15%,
+        rgba(137, 222, 201, 0.16) 50%,
+        transparent 85%
+      );
+      transform: translateX(-110%);
+      transition: transform 0.8s var(--ease-out-expo);
+      pointer-events: none;
+    }
+
+    .cta-btn:hover {
+      border-color: rgba(137, 222, 201, 0.62);
+      background: var(--glass-hover);
+      transform: translateY(-2px);
+      box-shadow:
+        inset 0 1px 0 rgba(244, 241, 234, 0.24),
+        0 18px 42px rgba(3, 11, 9, 0.36),
+        0 0 28px rgba(137, 222, 201, 0.12);
+    }
+
+    .cta-btn:hover::before {
+      transform: translateX(110%);
+    }
+
+    .cta-btn:active {
+      transform: translateY(0);
+    }
+
+    .cta-arrow {
+      width: 15px;
+      height: 15px;
+      flex-shrink: 0;
+      transition: transform 0.35s var(--ease-out-expo);
+    }
+
+    .cta-btn:hover .cta-arrow {
+      transform: translateX(4px);
+    }
+
+    /* Footer */
+    .site-footer {
+      border-top: 1px solid rgba(244, 241, 234, 0.1);
+      padding-top: clamp(14px, 2.2vh, 22px);
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      animation: fadeRise 1.4s var(--ease-out-expo) 0.52s both;
+    }
+
+    .footer-meta {
+      font-size: clamp(0.7rem, 0.85vw, 0.78rem);
+      font-weight: 300;
+      line-height: 1.75;
+      letter-spacing: 0.02em;
+      color: var(--ivory-muted);
+      word-break: keep-all;
+    }
+
+    .footer-meta a {
+      color: var(--ivory-soft);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(244, 241, 234, 0.22);
+      padding-bottom: 1px;
+      transition: color 0.25s ease, border-color 0.25s ease;
+    }
+
+    .footer-meta a:hover {
+      color: var(--accent-mint);
+      border-color: var(--accent-mint);
+    }
+
+    /* Accessible Focus Rings */
+    a:focus-visible,
+    button:focus-visible {
+      outline: 2px solid var(--focus-ring);
+      outline-offset: 3px;
+    }
+
+    @keyframes fadeRise {
+      from {
+        opacity: 0;
+        transform: translateY(14px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .site-header,
+      .badge,
+      .headline,
+      .subcopy,
+      .cta-wrap,
+      .site-footer {
+        animation: none;
+      }
+      .translatable,
+      .cta-btn,
+      .cta-arrow {
+        transition-duration: 0.01ms;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .brand-wordmark {
+        letter-spacing: 0.18em;
+      }
+      .lang-btn {
+        padding: 5px 10px;
+        min-width: 38px;
+      }
+      .badge {
+        letter-spacing: 0.24em;
+        padding: 7px 14px;
+      }
+    }
+  </style>
 </head>
 <body>
-<div class="bg" aria-hidden="true"></div>
-
-<header class="site-header">
-  <div class="wrap header-inner">
-    <a class="brand" href="/" aria-label="Basilla Bio">
-      <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true">
-        <rect width="40" height="40" rx="10" fill="#123B2D"/>
-        <path d="M20 29.5V17.6c0-4.2 3.4-7 8.2-7 -.7 6.2-3.4 9.6-8.2 10.2m0 0c0-4.8-3.4-7.6-8.2-7.6 .7 5.5 3.4 8.2 8.2 8.2" fill="none" stroke="#C9E3A6" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
-      <span class="brand-name">BASILLA BIO</span>
-    </a>
-
-    <div class="lang" role="group" aria-label="언어 선택">
-      <button type="button" data-lang-btn="ko" aria-pressed="true">KR</button>
-      <button type="button" data-lang-btn="en" aria-pressed="false">EN</button>
-    </div>
+  <div class="stage" aria-hidden="true">
+    <canvas id="fluid-canvas"></canvas>
+    <canvas id="particle-canvas"></canvas>
+    <div class="stage-veil" id="stage-veil"></div>
+    <div class="stage-grain"></div>
   </div>
-</header>
 
-<main>
-  <div class="hero">
-    <p class="badge" data-en="COMING SOON">COMING SOON</p>
-    <h1 data-en="Something thoughtful<br>is on the way.">더 좋은 제품으로<br>곧 인사드리겠습니다.</h1>
-    <p class="lead" data-en="Basilla Bio is preparing a carefully chosen product.">바실라바이오(Basilla Bio)가 엄선된 제품을 준비하고 있습니다.</p>
+  <div class="shell" id="app-shell">
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="BASILLA BIO">
+        <svg class="brand-mark" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path
+            d="M18 4C11.2 9.4 7.5 15.2 7.5 21.2C7.5 26.8 12.1 31.2 18 31.2C23.9 31.2 28.5 26.8 28.5 21.2C28.5 15.2 24.8 9.4 18 4Z"
+            stroke="currentColor"
+            stroke-width="1.35"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M18 9.2V26.2"
+            stroke="currentColor"
+            stroke-width="1.15"
+            stroke-linecap="round"
+            opacity="0.72"
+          />
+          <path
+            d="M18 17.5L23.2 14.3M18 21.6L12.8 18.6"
+            stroke="currentColor"
+            stroke-width="1.15"
+            stroke-linecap="round"
+            opacity="0.72"
+          />
+          <circle cx="18" cy="17.5" r="2.1" fill="currentColor" />
+          <circle cx="23.4" cy="14.2" r="1.45" fill="currentColor" opacity="0.88" />
+          <circle cx="12.6" cy="18.5" r="1.45" fill="currentColor" opacity="0.88" />
+        </svg>
+        <span class="brand-wordmark">BASILLA BIO</span>
+      </a>
+
+      <div class="lang-toggle" role="group" aria-label="Language selection">
+        <button type="button" class="lang-btn" id="btn-kr" data-lang="ko" aria-pressed="true" aria-label="한국어로 보기">KR</button>
+        <span class="lang-divider" aria-hidden="true"></span>
+        <button type="button" class="lang-btn" id="btn-en" data-lang="en" aria-pressed="false" aria-label="View in English">EN</button>
+      </div>
+    </header>
+
+    <main class="hero" id="top">
+      <div class="badge">
+        <span class="badge-dot" aria-hidden="true"></span>
+        <span class="translatable" id="t-badge">COMING SOON</span>
+      </div>
+
+      <h1 class="headline translatable" id="t-headline">
+        <span class="headline-line">자연과 과학이 만나는</span>
+        <span class="headline-line">건강한 내일</span>
+      </h1>
+
+      <p class="subcopy translatable" id="t-subcopy">
+        <span class="subcopy-line">매일의 건강을, 정직하게.</span>
+        <span class="subcopy-line">곧 인사드리겠습니다.</span>
+      </p>
+
+      <div class="cta-wrap">
+        <a
+          class="cta-btn"
+          id="t-cta-link"
+          href="mailto:jaehun@basillabio.com"
+          aria-label="이메일 문의하기 jaehun@basillabio.com"
+        >
+          <span class="translatable" id="t-cta-text">이메일 문의하기</span>
+          <svg class="cta-arrow" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path
+              d="M3.25 8H12.75M12.75 8L8.75 4M12.75 8L8.75 12"
+              stroke="currentColor"
+              stroke-width="1.35"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </a>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <p class="footer-meta translatable" id="t-footer">
+        © Basilla Bio · 대표 김재훈 · 사업자등록번호 311-11-98977 · 문의
+        <a href="mailto:jaehun@basillabio.com">jaehun@basillabio.com</a>
+      </p>
+    </footer>
   </div>
-</main>
 
-<footer class="site-footer">
-  <div class="wrap footer-inner">
-    <div class="contact">
-      <span class="label" data-en="Contact">문의</span>
-      <a href="mailto:jaehun@basillabio.com">jaehun@basillabio.com</a>
-    </div>
-    <p class="legal" data-en="© Basilla Bio · CEO Jaehun Kim · Business Registration No. 311-11-98977">© Basilla Bio · 대표 김재훈 · 사업자등록번호 311-11-98977</p>
-  </div>
-</footer>
+  <script>
+    (function () {
+      "use strict";
 
-<script>
-(function(){
-  "use strict";
+      /* =========================================================
+         1. Internationalization (KR / EN) with localStorage
+         ========================================================= */
+      var STORAGE_KEY = "basillabio_lang";
 
-  var STORAGE_KEY = "basilla-lang";
-  var TITLE = {
-    ko: "바실라바이오 · 준비 중",
-    en: "Basilla Bio — Coming Soon"
-  };
-  var nodes = Array.prototype.slice.call(document.querySelectorAll("[data-en]"));
-  nodes.forEach(function(el){ el.setAttribute("data-ko", el.innerHTML); });
+      var COPY = {
+        ko: {
+          htmlLang: "ko",
+          title: "바실라바이오 BASILLA BIO · Coming Soon",
+          badge: "COMING SOON",
+          headline: ["자연과 과학이 만나는", "건강한 내일"],
+          subcopy: ["매일의 건강을, 정직하게.", "곧 인사드리겠습니다."],
+          ctaText: "이메일 문의하기",
+          ctaAria: "이메일 문의하기 jaehun@basillabio.com",
+          footerPrefix: "© Basilla Bio · 대표 김재훈 · 사업자등록번호 311-11-98977 · 문의 "
+        },
+        en: {
+          htmlLang: "en",
+          title: "BASILLA BIO — Coming Soon",
+          badge: "COMING SOON",
+          headline: ["Where Nature", "Meets Science"],
+          subcopy: ["Everyday wellness, crafted with integrity.", "We are almost ready."],
+          ctaText: "Contact Us",
+          ctaAria: "Send an email inquiry to jaehun@basillabio.com",
+          footerPrefix: "© Basilla Bio · CEO Jaehun Kim · Business Reg. 311-11-98977 · Contact "
+        }
+      };
 
-  function setLang(lang){
-    var isEn = lang === "en";
-    document.documentElement.lang = isEn ? "en" : "ko";
-    nodes.forEach(function(el){
-      el.innerHTML = isEn ? el.getAttribute("data-en") : el.getAttribute("data-ko");
-    });
-    document.title = TITLE[isEn ? "en" : "ko"];
-    Array.prototype.forEach.call(document.querySelectorAll("[data-lang-btn]"), function(btn){
-      btn.setAttribute("aria-pressed", btn.getAttribute("data-lang-btn") === lang ? "true" : "false");
-    });
-    try { localStorage.setItem(STORAGE_KEY, lang); } catch(e){}
-  }
+      var shell = document.getElementById("app-shell");
+      var btnKr = document.getElementById("btn-kr");
+      var btnEn = document.getElementById("btn-en");
+      var elBadge = document.getElementById("t-badge");
+      var elHeadline = document.getElementById("t-headline");
+      var elSubcopy = document.getElementById("t-subcopy");
+      var elCtaText = document.getElementById("t-cta-text");
+      var elCtaLink = document.getElementById("t-cta-link");
+      var elFooter = document.getElementById("t-footer");
 
-  Array.prototype.forEach.call(document.querySelectorAll("[data-lang-btn]"), function(btn){
-    btn.addEventListener("click", function(){ setLang(btn.getAttribute("data-lang-btn")); });
-  });
+      var currentLang = "ko";
+      var switchTimer = null;
 
-  var saved = null;
-  try { saved = localStorage.getItem(STORAGE_KEY); } catch(e){}
-  if (saved === "en") setLang("en");
-  else if (!saved && (navigator.language || "ko").toLowerCase().indexOf("ko") !== 0) setLang("en");
-})();
-</script>
+      function readStoredLang() {
+        try {
+          var saved = window.localStorage.getItem(STORAGE_KEY);
+          if (saved === "ko" || saved === "en") return saved;
+        } catch (e) {
+          /* Ignore storage access restrictions */
+        }
+        return "ko";
+      }
+
+      function saveStoredLang(lang) {
+        try {
+          window.localStorage.setItem(STORAGE_KEY, lang);
+        } catch (e) {
+          /* Ignore storage access restrictions */
+        }
+      }
+
+      function renderCopy(lang) {
+        var data = COPY[lang] || COPY.ko;
+        document.documentElement.lang = data.htmlLang;
+        document.title = data.title;
+
+        elBadge.textContent = data.badge;
+
+        elHeadline.innerHTML = "";
+        data.headline.forEach(function (line) {
+          var span = document.createElement("span");
+          span.className = "headline-line";
+          span.textContent = line;
+          elHeadline.appendChild(span);
+        });
+
+        elSubcopy.innerHTML = "";
+        data.subcopy.forEach(function (line) {
+          var span = document.createElement("span");
+          span.className = "subcopy-line";
+          span.textContent = line;
+          elSubcopy.appendChild(span);
+        });
+
+        elCtaText.textContent = data.ctaText;
+        elCtaLink.setAttribute("aria-label", data.ctaAria);
+
+        elFooter.innerHTML = "";
+        elFooter.appendChild(document.createTextNode(data.footerPrefix));
+        var mailLink = document.createElement("a");
+        mailLink.href = "mailto:jaehun@basillabio.com";
+        mailLink.textContent = "jaehun@basillabio.com";
+        elFooter.appendChild(mailLink);
+
+        btnKr.setAttribute("aria-pressed", lang === "ko" ? "true" : "false");
+        btnEn.setAttribute("aria-pressed", lang === "en" ? "true" : "false");
+      }
+
+      function setLanguage(lang, animate) {
+        if (lang !== "ko" && lang !== "en") return;
+        if (lang === currentLang && animate) return;
+
+        currentLang = lang;
+        saveStoredLang(lang);
+
+        if (!animate || prefersReducedMotion) {
+          renderCopy(lang);
+          return;
+        }
+
+        if (switchTimer) {
+          window.clearTimeout(switchTimer);
+        }
+        shell.classList.add("is-switching");
+        switchTimer = window.setTimeout(function () {
+          renderCopy(lang);
+          shell.classList.remove("is-switching");
+          switchTimer = null;
+        }, 220);
+      }
+
+      /* =========================================================
+         2. Motion Preferences, Visibility & Pointer Parallax
+         ========================================================= */
+      var motionQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
+      var prefersReducedMotion = motionQuery.matches;
+
+      var pointer = {
+        targetX: 0,
+        targetY: 0,
+        x: 0,
+        y: 0
+      };
+
+      var stageVeil = document.getElementById("stage-veil");
+
+      function onPointerMove(e) {
+        if (prefersReducedMotion) return;
+        var w = window.innerWidth || 1;
+        var h = window.innerHeight || 1;
+        var clientX = e.touches && e.touches.length ? e.touches[0].clientX : e.clientX;
+        var clientY = e.touches && e.touches.length ? e.touches[0].clientY : e.clientY;
+        pointer.targetX = (clientX / w - 0.5) * 2;
+        pointer.targetY = (clientY / h - 0.5) * 2;
+      }
+
+      function onPointerReset() {
+        pointer.targetX = 0;
+        pointer.targetY = 0;
+      }
+
+      window.addEventListener("pointermove", onPointerMove, { passive: true });
+      window.addEventListener("touchmove", onPointerMove, { passive: true });
+      window.addEventListener("pointerleave", onPointerReset, { passive: true });
+
+      /* Initialize language immediately */
+      currentLang = readStoredLang();
+      renderCopy(currentLang);
+
+      btnKr.addEventListener("click", function () { setLanguage("ko", true); });
+      btnEn.addEventListener("click", function () { setLanguage("en", true); });
+
+      /* =========================================================
+         3. WebGL Organic Fluid Aurora Shader (v2 Enhanced Motion)
+            + Diagonal Light Sweeps + Canvas 2D Fallback
+         ========================================================= */
+      var fluidCanvas = document.getElementById("fluid-canvas");
+      var particleCanvas = document.getElementById("particle-canvas");
+      var pCtx = particleCanvas.getContext("2d", { alpha: true });
+
+      var gl = null;
+      var glProgram = null;
+      var uTimeLoc = null;
+      var uResLoc = null;
+      var uPointerLoc = null;
+      var useWebGL = false;
+
+      var VERT_SRC = [
+        "attribute vec2 a_pos;",
+        "varying vec2 v_uv;",
+        "void main() {",
+        "  v_uv = a_pos * 0.5 + 0.5;",
+        "  gl_Position = vec4(a_pos, 0.0, 1.0);",
+        "}"
+      ].join("\n");
+
+      var FRAG_SRC = [
+        "precision highp float;",
+        "varying vec2 v_uv;",
+        "uniform float u_time;",
+        "uniform vec2 u_resolution;",
+        "uniform vec2 u_pointer;",
+        "",
+        "float hash(vec2 p) {",
+        "  p = fract(p * vec2(123.34, 456.21));",
+        "  p += dot(p, p + 45.32);",
+        "  return fract(p.x * p.y);",
+        "}",
+        "",
+        "float noise(vec2 p) {",
+        "  vec2 i = floor(p);",
+        "  vec2 f = fract(p);",
+        "  vec2 u = f * f * (3.0 - 2.0 * f);",
+        "  float a = hash(i);",
+        "  float b = hash(i + vec2(1.0, 0.0));",
+        "  float c = hash(i + vec2(0.0, 1.0));",
+        "  float d = hash(i + vec2(1.0, 1.0));",
+        "  return mix(mix(a, b, u.x), mix(c, d, u.x), u.y);",
+        "}",
+        "",
+        "float fbm(vec2 p) {",
+        "  float v = 0.0;",
+        "  float amp = 0.52;",
+        "  mat2 rot = mat2(0.80, -0.60, 0.60, 0.80);",
+        "  for (int i = 0; i < 4; i++) {",
+        "    v += amp * noise(p);",
+        "    p = rot * p * 1.92 + vec2(1.7, 9.2);",
+        "    amp *= 0.5;",
+        "  }",
+        "  return v;",
+        "}",
+        "",
+        "void main() {",
+        "  vec2 uv = v_uv;",
+        "  float aspect = u_resolution.x / max(u_resolution.y, 1.0);",
+        "  vec2 p = (uv - 0.5) * vec2(aspect, 1.0);",
+        "  p += u_pointer * 0.065;",
+        "",
+        "  /* ~1.85x faster organic flow speed for clear 3-second motion perception */",
+        "  float t = u_time * 0.26;",
+        "",
+        "  /* Amplified domain warping for richer fluid movement */",
+        "  vec2 q = vec2(",
+        "    fbm(p * 1.25 + vec2(t * 0.95, t * 0.48)),",
+        "    fbm(p * 1.25 + vec2(-t * 0.64 + 4.2, t * 0.76 + 1.3))",
+        "  );",
+        "",
+        "  vec2 r = vec2(",
+        "    fbm(p * 1.75 + 2.85 * q + vec2(t * 0.55, -t * 0.44)),",
+        "    fbm(p * 1.75 + 2.85 * q + vec2(-t * 0.46 + 7.1, t * 0.62 + 2.8))",
+        "  );",
+        "",
+        "  float f = fbm(p * 1.38 + 2.55 * r);",
+        "",
+        "  /* Flowing aurora currents */",
+        "  float wave = sin(p.x * 2.2 + r.x * 4.4 + t * 2.1) * 0.5 + 0.5;",
+        "  float caustic = smoothstep(0.36, 0.88, f * 0.72 + wave * 0.38);",
+        "  float highlight = smoothstep(0.60, 0.96, f * r.y * 1.55 + wave * 0.24);",
+        "",
+        "  /* Two slow diagonal light sweep ribbons (~10s and ~13.8s cycles) */",
+        "  float diag1 = (uv.x * 0.82 - uv.y * 0.57) + (r.x - 0.5) * 0.28;",
+        "  float sweepPos1 = fract(u_time / 10.0) * 2.4 - 1.2;",
+        "  float ribbon1 = exp(-pow((diag1 - sweepPos1) * 4.6, 2.0));",
+        "  ribbon1 *= smoothstep(0.0, 0.22, fract(u_time / 10.0)) * smoothstep(1.0, 0.76, fract(u_time / 10.0));",
+        "",
+        "  float diag2 = (uv.x * 0.68 + uv.y * 0.73) + (q.y - 0.5) * 0.32;",
+        "  float sweepPos2 = fract((u_time + 4.8) / 13.8) * 2.4 - 0.65;",
+        "  float ribbon2 = exp(-pow((diag2 - sweepPos2) * 3.8, 2.0));",
+        "  ribbon2 *= smoothstep(0.0, 0.24, fract((u_time + 4.8) / 13.8)) * smoothstep(1.0, 0.74, fract((u_time + 4.8) / 13.8));",
+        "",
+        "  /* Palette: Deep Forest, Moss, Deep Teal, Luminous Mint, Warm Ivory Mist */",
+        "  vec3 colDeep   = vec3(0.020, 0.068, 0.056);",
+        "  vec3 colForest = vec3(0.058, 0.185, 0.148);",
+        "  vec3 colMoss   = vec3(0.185, 0.335, 0.258);",
+        "  vec3 colTeal   = vec3(0.082, 0.365, 0.372);",
+        "  vec3 colMint   = vec3(0.465, 0.845, 0.758);",
+        "  vec3 colIvory  = vec3(0.925, 0.895, 0.815);",
+        "",
+        "  vec3 color = mix(colDeep, colForest, smoothstep(0.12, 0.74, f));",
+        "  color = mix(color, colMoss, smoothstep(0.28, 0.82, q.x) * 0.68);",
+        "  color = mix(color, colTeal, smoothstep(0.24, 0.84, r.y) * 0.80);",
+        "  color += colMint * caustic * 0.32;",
+        "  color += colIvory * highlight * 0.18;",
+        "",
+        "  /* Blend diagonal light ribbons smoothly into the atmosphere */",
+        "  color += mix(colMint, colIvory, 0.42) * ribbon1 * 0.20;",
+        "  color += mix(colTeal, colMint, 0.65) * ribbon2 * 0.16;",
+        "",
+        "  /* Gentle breathing bloom */",
+        "  float breath = 0.92 + 0.08 * sin(u_time * 0.62);",
+        "  color *= breath;",
+        "",
+        "  /* Soft radial vignette to anchor typography */",
+        "  float dist = length((uv - 0.5) * vec2(1.12, 1.0));",
+        "  color *= smoothstep(1.22, 0.16, dist * 0.90);",
+        "",
+        "  gl_FragColor = vec4(color, 1.0);",
+        "}"
+      ].join("\n");
+
+      function compileShader(context, type, source) {
+        var shader = context.createShader(type);
+        context.shaderSource(shader, source);
+        context.compileShader(shader);
+        if (!context.getShaderParameter(shader, context.COMPILE_STATUS)) {
+          context.deleteShader(shader);
+          return null;
+        }
+        return shader;
+      }
+
+      function initWebGL() {
+        try {
+          gl = fluidCanvas.getContext("webgl", {
+            alpha: false,
+            antialias: false,
+            depth: false,
+            stencil: false,
+            powerPreference: "low-power"
+          }) || fluidCanvas.getContext("experimental-webgl");
+
+          if (!gl) return false;
+
+          var vs = compileShader(gl, gl.VERTEX_SHADER, VERT_SRC);
+          var fs = compileShader(gl, gl.FRAGMENT_SHADER, FRAG_SRC);
+          if (!vs || !fs) return false;
+
+          glProgram = gl.createProgram();
+          gl.attachShader(glProgram, vs);
+          gl.attachShader(glProgram, fs);
+          gl.linkProgram(glProgram);
+
+          if (!gl.getProgramParameter(glProgram, gl.LINK_STATUS)) {
+            return false;
+          }
+
+          var buffer = gl.createBuffer();
+          gl.bindBuffer(gl.ARRAY_BUFFER, buffer);
+          gl.bufferData(
+            gl.ARRAY_BUFFER,
+            new Float32Array([-1, -1, 1, -1, -1, 1, -1, 1, 1, -1, 1, 1]),
+            gl.STATIC_DRAW
+          );
+
+          var posLoc = gl.getAttribLocation(glProgram, "a_pos");
+          gl.enableVertexAttribArray(posLoc);
+          gl.vertexAttribPointer(posLoc, 2, gl.FLOAT, false, 0, 0);
+
+          uTimeLoc = gl.getUniformLocation(glProgram, "u_time");
+          uResLoc = gl.getUniformLocation(glProgram, "u_resolution");
+          uPointerLoc = gl.getUniformLocation(glProgram, "u_pointer");
+
+          return true;
+        } catch (err) {
+          return false;
+        }
+      }
+
+      useWebGL = initWebGL();
+      var fallbackCtx = useWebGL ? null : fluidCanvas.getContext("2d", { alpha: false });
+
+      /* =========================================================
+         4. Canvas 2D Bokeh Orbs, Diagonal Light Sweep & Motes
+         ========================================================= */
+      var viewW = window.innerWidth;
+      var viewH = window.innerHeight;
+      var dpr = 1;
+
+      var bokehOrbs = [];
+      var motes = [];
+      var fallbackBlobs = [
+        { x: 0.22, y: 0.28, r: 0.56, sx: 0.36, sy: 0.30, phase: 0.4, color: "rgba(25, 114, 110, 0.52)" },
+        { x: 0.78, y: 0.68, r: 0.58, sx: 0.32, sy: 0.38, phase: 2.1, color: "rgba(74, 124, 96, 0.44)" },
+        { x: 0.52, y: 0.42, r: 0.48, sx: 0.42, sy: 0.34, phase: 4.3, color: "rgba(126, 218, 196, 0.26)" },
+        { x: 0.35, y: 0.76, r: 0.50, sx: 0.28, sy: 0.36, phase: 1.2, color: "rgba(230, 222, 198, 0.16)" }
+      ];
+
+      function rand(min, max) {
+        return min + Math.random() * (max - min);
+      }
+
+      function createParticles() {
+        var isMobile = viewW < 768;
+        var orbCount = isMobile ? 6 : 9;
+        var moteCount = isMobile ? 40 : 72; /* +50% mote density */
+
+        bokehOrbs = [];
+        for (var i = 0; i < orbCount; i++) {
+          var palette = i % 3 === 0
+            ? [142, 228, 206]
+            : i % 3 === 1
+              ? [64, 154, 142]
+              : [240, 232, 210];
+          bokehOrbs.push({
+            x: rand(0.05, 0.95),
+            y: rand(0.05, 0.95),
+            radius: rand(isMobile ? 95 : 150, isMobile ? 200 : 340),
+            vx: rand(-0.015, 0.015),
+            vy: rand(-0.012, 0.012),
+            depth: rand(0.35, 1.0),
+            alpha: rand(0.06, 0.135),
+            phase: rand(0, Math.PI * 2),
+            rgb: palette
+          });
+        }
+
+        motes = [];
+        for (var j = 0; j < moteCount; j++) {
+          var warm = j % 4 === 0;
+          motes.push({
+            x: rand(0, viewW),
+            y: rand(0, viewH),
+            r: rand(1.15, 3.05),
+            vx: rand(-14, 14),
+            vy: rand(-22, -7),
+            driftAmp: rand(10, 26),
+            driftFreq: rand(0.42, 0.95),
+            phase: rand(0, Math.PI * 2),
+            depth: rand(0.25, 1.0),
+            baseAlpha: rand(0.26, 0.76),
+            rgb: warm ? [246, 243, 234] : [152, 234, 214]
+          });
+        }
+      }
+
+      function resizeCanvases() {
+        viewW = window.innerWidth;
+        viewH = window.innerHeight;
+        dpr = Math.min(window.devicePixelRatio || 1, 2);
+
+        /* Render WebGL slightly softer on ultra-high DPR for locked 60fps */
+        var glDpr = Math.min(dpr, 1.5);
+        fluidCanvas.width = Math.max(1, Math.floor(viewW * glDpr));
+        fluidCanvas.height = Math.max(1, Math.floor(viewH * glDpr));
+        if (useWebGL && gl) {
+          gl.viewport(0, 0, fluidCanvas.width, fluidCanvas.height);
+        }
+
+        particleCanvas.width = Math.max(1, Math.floor(viewW * dpr));
+        particleCanvas.height = Math.max(1, Math.floor(viewH * dpr));
+        if (pCtx) {
+          pCtx.setTransform(dpr, 0, 0, dpr, 0, 0);
+        }
+
+        createParticles();
+
+        if (prefersReducedMotion) {
+          renderStaticFrame();
+        }
+      }
+
+      function renderFallbackFluid(elapsed) {
+        if (!fallbackCtx) return;
+        var w = fluidCanvas.width;
+        var h = fluidCanvas.height;
+        fallbackCtx.fillStyle = "#06120f";
+        fallbackCtx.fillRect(0, 0, w, h);
+
+        fallbackCtx.save();
+        fallbackCtx.globalCompositeOperation = "lighter";
+        for (var i = 0; i < fallbackBlobs.length; i++) {
+          var b = fallbackBlobs[i];
+          var cx = (b.x + Math.sin(elapsed * b.sx + b.phase) * 0.18 + pointer.x * 0.04) * w;
+          var cy = (b.y + Math.cos(elapsed * b.sy + b.phase) * 0.16 + pointer.y * 0.04) * h;
+          var rad = b.r * Math.max(w, h);
+          var grad = fallbackCtx.createRadialGradient(cx, cy, 0, cx, cy, rad);
+          grad.addColorStop(0, b.color);
+          grad.addColorStop(1, "rgba(6, 18, 15, 0)");
+          fallbackCtx.fillStyle = grad;
+          fallbackCtx.beginPath();
+          fallbackCtx.arc(cx, cy, rad, 0, Math.PI * 2);
+          fallbackCtx.fill();
+        }
+        fallbackCtx.restore();
+      }
+
+      function renderLightRibbon2D(elapsed) {
+        if (!pCtx) return;
+        var diag = Math.hypot(viewW, viewH);
+        var cycle = (elapsed % 10.5) / 10.5;
+        var envelope = Math.sin(cycle * Math.PI);
+        var offset = (cycle * 1.9 - 0.95) * diag;
+
+        pCtx.save();
+        pCtx.globalCompositeOperation = "screen";
+        pCtx.translate(viewW * 0.5 + pointer.x * 16, viewH * 0.5 + pointer.y * 12);
+        pCtx.rotate(-0.56);
+
+        var ribbonW = Math.max(160, diag * 0.22);
+        var grad = pCtx.createLinearGradient(offset - ribbonW, 0, offset + ribbonW, 0);
+        var peakAlpha = (useWebGL ? 0.055 : 0.11) * envelope;
+        grad.addColorStop(0, "rgba(137, 222, 201, 0)");
+        grad.addColorStop(0.5, "rgba(218, 240, 230, " + peakAlpha.toFixed(4) + ")");
+        grad.addColorStop(1, "rgba(137, 222, 201, 0)");
+
+        pCtx.fillStyle = grad;
+        pCtx.fillRect(offset - ribbonW, -diag, ribbonW * 2, diag * 2);
+        pCtx.restore();
+      }
+
+      function renderParticles(dt, elapsed) {
+        if (!pCtx) return;
+        pCtx.clearRect(0, 0, viewW, viewH);
+
+        /* Soft diagonal light sweep layer */
+        renderLightRibbon2D(elapsed);
+
+        /* Soft bokeh light orbs */
+        pCtx.save();
+        pCtx.globalCompositeOperation = "screen";
+        for (var i = 0; i < bokehOrbs.length; i++) {
+          var orb = bokehOrbs[i];
+          orb.x += orb.vx * dt;
+          orb.y += orb.vy * dt;
+
+          if (orb.x < -0.18) orb.x = 1.18;
+          if (orb.x > 1.18) orb.x = -0.18;
+          if (orb.y < -0.18) orb.y = 1.18;
+          if (orb.y > 1.18) orb.y = -0.18;
+
+          var px = orb.x * viewW + pointer.x * 28 * orb.depth;
+          var py = orb.y * viewH + pointer.y * 22 * orb.depth;
+          var pulse = 0.76 + 0.24 * Math.sin(elapsed * 0.78 + orb.phase);
+          var alpha = orb.alpha * pulse;
+
+          var grad = pCtx.createRadialGradient(px, py, 0, px, py, orb.radius);
+          grad.addColorStop(0, "rgba(" + orb.rgb[0] + "," + orb.rgb[1] + "," + orb.rgb[2] + "," + alpha.toFixed(4) + ")");
+          grad.addColorStop(0.55, "rgba(" + orb.rgb[0] + "," + orb.rgb[1] + "," + orb.rgb[2] + "," + (alpha * 0.34).toFixed(4) + ")");
+          grad.addColorStop(1, "rgba(" + orb.rgb[0] + "," + orb.rgb[1] + "," + orb.rgb[2] + ",0)");
+
+          pCtx.fillStyle = grad;
+          pCtx.beginPath();
+          pCtx.arc(px, py, orb.radius, 0, Math.PI * 2);
+          pCtx.fill();
+        }
+        pCtx.restore();
+
+        /* Floating botanical / molecular light motes */
+        var linkDist = viewW < 768 ? 85 : 118;
+        var linkDistSq = linkDist * linkDist;
+
+        for (var j = 0; j < motes.length; j++) {
+          var m = motes[j];
+          m.x += (m.vx + Math.sin(elapsed * m.driftFreq + m.phase) * m.driftAmp) * dt;
+          m.y += m.vy * dt;
+
+          if (m.y < -20) {
+            m.y = viewH + 20;
+            m.x = rand(0, viewW);
+          }
+          if (m.x < -20) m.x = viewW + 20;
+          if (m.x > viewW + 20) m.x = -20;
+
+          m.renderX = m.x + pointer.x * 20 * m.depth;
+          m.renderY = m.y + pointer.y * 16 * m.depth;
+        }
+
+        /* Subtle organic molecular bonds between close motes */
+        pCtx.lineWidth = 0.7;
+        for (var a = 0; a < motes.length; a++) {
+          var ma = motes[a];
+          for (var b = a + 1; b < motes.length; b++) {
+            var mb = motes[b];
+            var dx = ma.renderX - mb.renderX;
+            var dy = ma.renderY - mb.renderY;
+            var dSq = dx * dx + dy * dy;
+            if (dSq < linkDistSq) {
+              var strength = (1 - Math.sqrt(dSq) / linkDist) * 0.11;
+              pCtx.strokeStyle = "rgba(160, 234, 214," + strength.toFixed(4) + ")";
+              pCtx.beginPath();
+              pCtx.moveTo(ma.renderX, ma.renderY);
+              pCtx.lineTo(mb.renderX, mb.renderY);
+              pCtx.stroke();
+            }
+          }
+        }
+
+        /* Draw mote cores with subtle halo on larger motes */
+        for (var k = 0; k < motes.length; k++) {
+          var mk = motes[k];
+          var twinkle = 0.56 + 0.44 * Math.sin(elapsed * 1.45 + mk.phase);
+          var aVal = mk.baseAlpha * twinkle;
+
+          if (mk.r > 2.15) {
+            pCtx.fillStyle = "rgba(" + mk.rgb[0] + "," + mk.rgb[1] + "," + mk.rgb[2] + "," + (aVal * 0.22).toFixed(4) + ")";
+            pCtx.beginPath();
+            pCtx.arc(mk.renderX, mk.renderY, mk.r * 2.5, 0, Math.PI * 2);
+            pCtx.fill();
+          }
+
+          pCtx.fillStyle = "rgba(" + mk.rgb[0] + "," + mk.rgb[1] + "," + mk.rgb[2] + "," + aVal.toFixed(4) + ")";
+          pCtx.beginPath();
+          pCtx.arc(mk.renderX, mk.renderY, mk.r, 0, Math.PI * 2);
+          pCtx.fill();
+        }
+      }
+
+      function renderStaticFrame() {
+        if (useWebGL && gl && glProgram) {
+          gl.useProgram(glProgram);
+          gl.uniform1f(uTimeLoc, 4.2);
+          gl.uniform2f(uResLoc, fluidCanvas.width, fluidCanvas.height);
+          gl.uniform2f(uPointerLoc, 0, 0);
+          gl.drawArrays(gl.TRIANGLES, 0, 6);
+        } else {
+          renderFallbackFluid(4.2);
+        }
+        renderParticles(0, 4.2);
+      }
+
+      /* =========================================================
+         5. Animation Loop with Visibility Pause & Resize Handling
+         ========================================================= */
+      var rafId = null;
+      var lastTimestamp = 0;
+      var elapsed = 2.6; /* Start mid-sweep so motion is unmistakable within 3s */
+      var isPaused = false;
+
+      function frame(timestamp) {
+        if (isPaused || prefersReducedMotion) {
+          rafId = null;
+          return;
+        }
+
+        if (!lastTimestamp) lastTimestamp = timestamp;
+        var dt = Math.min((timestamp - lastTimestamp) / 1000, 0.05);
+        lastTimestamp = timestamp;
+        elapsed += dt;
+
+        /* Smooth pointer easing */
+        var ease = 1 - Math.exp(-3.4 * dt);
+        pointer.x += (pointer.targetX - pointer.x) * ease;
+        pointer.y += (pointer.targetY - pointer.y) * ease;
+
+        if (stageVeil) {
+          stageVeil.style.transform =
+            "translate3d(" + (-pointer.x * 11).toFixed(2) + "px, " + (-pointer.y * 9).toFixed(2) + "px, 0)";
+        }
+
+        if (useWebGL && gl && glProgram) {
+          gl.useProgram(glProgram);
+          gl.uniform1f(uTimeLoc, elapsed);
+          gl.uniform2f(uResLoc, fluidCanvas.width, fluidCanvas.height);
+          gl.uniform2f(uPointerLoc, pointer.x, -pointer.y);
+          gl.drawArrays(gl.TRIANGLES, 0, 6);
+        } else {
+          renderFallbackFluid(elapsed);
+        }
+
+        renderParticles(dt, elapsed);
+        rafId = window.requestAnimationFrame(frame);
+      }
+
+      function startLoop() {
+        if (prefersReducedMotion || document.hidden) return;
+        isPaused = false;
+        lastTimestamp = 0;
+        if (!rafId) {
+          rafId = window.requestAnimationFrame(frame);
+        }
+      }
+
+      function stopLoop() {
+        isPaused = true;
+        if (rafId) {
+          window.cancelAnimationFrame(rafId);
+          rafId = null;
+        }
+      }
+
+      document.addEventListener("visibilitychange", function () {
+        if (document.hidden) {
+          stopLoop();
+        } else {
+          startLoop();
+        }
+      });
+
+      var resizeTimer = null;
+      window.addEventListener("resize", function () {
+        if (resizeTimer) window.clearTimeout(resizeTimer);
+        resizeTimer = window.setTimeout(resizeCanvases, 120);
+      }, { passive: true });
+
+      function onMotionPreferenceChange(e) {
+        prefersReducedMotion = e.matches;
+        if (prefersReducedMotion) {
+          stopLoop();
+          if (stageVeil) stageVeil.style.transform = "none";
+          renderStaticFrame();
+        } else {
+          startLoop();
+        }
+      }
+
+      if (typeof motionQuery.addEventListener === "function") {
+        motionQuery.addEventListener("change", onMotionPreferenceChange);
+      } else if (typeof motionQuery.addListener === "function") {
+        motionQuery.addListener(onMotionPreferenceChange);
+      }
+
+      /* Boot */
+      resizeCanvases();
+      if (prefersReducedMotion) {
+        renderStaticFrame();
+      } else {
+        startLoop();
+      }
+    })();
+  </script>
 </body>
 </html>
